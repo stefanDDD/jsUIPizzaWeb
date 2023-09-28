@@ -1,0 +1,2527 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50;
+    margin: 0;
+}
+
+.overviewPanel {
+    width: 1700px;
+    height: 1275px;
+    background-color: rgb(236, 234, 234);
+    position: auto;
+    border: 6px solid #999;
+    border-radius: 15px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.overviewOvens {
+    width: 240px;
+    height: 330px;
+    background-color: rgb(236, 234, 234);
+    transform: translate(2%, 2%);
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.tooltipOvens {
+    border-radius: 10px;
+    position: fixed;
+    display: fixed;
+    flex-direction: column;
+    top: 5px;
+    left: 10px;
+    background-color: white;
+    padding: 10px;
+    width: 200px;
+    height: 300px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.backgroundInformationsOvens {
+    width: 310px;
+    height: 330px;
+    background-color: rgb(236, 234, 234);
+    transform: translate(77%, 0%);
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.informationsOvensCover {
+    border-radius: 10px;
+    position: fixed;
+    display: fixed;
+    flex-direction: column;
+    top: 5px;
+    left: 5px;
+    background-color: white;
+    padding: 10px;
+    width: 270px;
+    height: 300px;
+}
+
+.informationsOvensCoverDisplay {
+    border-radius: 10px;
+    position: fixed;
+    display: fixed;
+    flex-direction: column;
+    top: 5px;
+    left: 5px;
+    background-color: white;
+    padding: 0px;
+    width: 290px;
+    height: 320px;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+.informationsOvens {
+    border-radius: 10px;
+    position: fixed;
+    display: fixed;
+    flex-direction: column;
+    top: 5px;
+    left: 6px;
+    background-color: white;
+    padding: 10px;
+    width: 270px;
+    height: 300px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    visibility: hidden;
+}
+
+.tooltipOvens .imgContainer {
+    width: 200px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', sans-serif;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    border-bottom: 1px solid #ececec;
+    background-color: white;
+    border: none;
+}
+
+.tooltipOvens .imgContainer:hover {
+    background-color: #ececec;
+    cursor: pointer;
+}
+
+.tooltipOvens .imgContainer:active {
+    background-color: #d3d0d0;
+    cursor: pointer;
+}
+
+.tooltipOvens img {
+    display: block;
+    margin-right: 30px;
+    margin-bottom: 15px;
+    border-radius: 30%;
+    width: 40px;
+    height: 40px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+.overviewDeliverers {
+    width: 240px;
+    height: 330px;
+    background-color: rgb(236, 234, 234);
+    transform: translate(2%, 2%);
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.tooltipDeliverers {
+    border-radius: 10px;
+    position: fixed;
+    display: fixed;
+    flex-direction: column;
+    top: 5px;
+    left: 10px;
+    background-color: white;
+    padding: 10px;
+    width: 200px;
+    height: 300px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.backgroundInformationsDeliverers {
+    width: 310px;
+    height: 330px;
+    background-color: rgb(236, 234, 234);
+    transform: translate(77%, 0%);
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.informationsDeliverersCover {
+    border-radius: 10px;
+    position: fixed;
+    display: fixed;
+    flex-direction: column;
+    top: 5px;
+    left: 6px;
+    background-color: white;
+    padding: 10px;
+    width: 270px;
+    height: 300px;
+
+}
+
+.informationsDeliverersCoverDisplay {
+    border-radius: 10px;
+    position: fixed;
+    display: fixed;
+    flex-direction: column;
+    top: 5px;
+    left: 5px;
+    background-color: white;
+    padding: 0px;
+    width: 290px;
+    height: 320px;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+.informationsDeliverers {
+    border-radius: 10px;
+    position: fixed;
+    display: fixed;
+    flex-direction: column;
+    top: 5px;
+    left: 6px;
+    background-color: white;
+    padding: 10px;
+    width: 270px;
+    height: 300px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    visibility: hidden;
+}
+
+.tooltipDeliverers .imgContainerDeliverers {
+    width: 200px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', sans-serif;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    background-color: white;
+    border: none;
+}
+
+.tooltipDeliverers img {
+    display: block;
+    margin-right: 20px;
+    margin-bottom: 3px;
+    border-radius: 30%;
+    width: 50px;
+    height: 40px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.dataListOvens_row {
+    margin-top: 0px;
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', sans-serif;
+    border-bottom: 1px solid #ececec;
+    padding: 5px 0;
+    transition: background-color 0.3s;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+}
+
+.dataListOvens_rowDefault {
+    margin-top: 0px;
+    width: 100%;
+    margin-bottom: 2px;
+    font-size: 14px;
+    font-family: 'Trebuchet MS', sans-serif;
+    border-bottom: 1px solid #ececec;
+    padding: 5px 0;
+    transition: background-color 0.3s;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+}
+
+.line {
+    width: 270px;
+    height: 2px;
+    background-color: #999;
+    position: absolute;
+    top: 10%;
+    transform: translateY(-50%);
+}
+
+.currentSelectedOven {
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.currentSelectedDeliverer {
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.dataListDeliverer_row {
+    width: 100%;
+    margin-bottom: 4px;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', sans-serif;
+    border-bottom: 1px solid #ececec;
+    padding: 5px 0;
+    transition: background-color 0.3s;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+}
+
+.dataListDeliverer_rowDefault {
+    margin-top: 0px;
+    width: 100%;
+    margin-bottom: 2px;
+    font-size: 14px;
+    font-family: 'Trebuchet MS', sans-serif;
+    border-bottom: 1px solid #ececec;
+    padding: 5px 0;
+    transition: background-color 0.3s;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+}
+
+.tooltipDeliverers .imgContainerDeliverers:hover {
+    background-color: #ececec;
+    cursor: pointer;
+}
+
+.tooltipDeliverers .imgContainerDeliverers:active {
+    background-color: #d3d0d0;
+    cursor: pointer;
+}
+
+.idle-status {
+    color: orange;
+    font-weight: bold;
+}
+
+.cooking-status {
+    color: lime;
+    font-style: italic;
+}
+
+.not-cooking-status {
+    color: red;
+}
+
+.delivering-status {
+    color: lime;
+    font-style: italic;
+}
+
+.not-delivering-status {
+    color: red;
+}
+
+.progress-container {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 74%;
+    background-color: #ccc;
+    height: 20px;
+    align-items: right;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.progress-bar {
+    width: 0px;
+    height: 100%;
+    background-color: rgb(22, 175, 22);
+    transition: width 0.5s;
+    border-radius: 10px;
+}
+
+.progress-containerDeliverer {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 74%;
+    background-color: #ccc;
+    height: 20px;
+    align-items: right;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-barDeliverer {
+    width: 0;
+    height: 100%;
+    background-color: rgb(22, 175, 22);
+    transition: width 0.5s;
+    border-radius: 10px;
+}
+
+.statusOven1,
+.statusOven2,
+.statusOven3,
+.statusOven4,
+.statusOven5 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 79%;
+}
+
+.prepareItem1,
+.prepareItem2,
+.prepareItem3,
+.prepareItem4,
+.prepareItem5 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 68%;
+}
+
+.prepareTime1,
+.prepareTime2,
+.prepareTime3,
+.prepareTime4,
+.prepareTime5 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 57%;
+}
+
+.remainingTime1,
+.remainingTime2,
+.remainingTime3,
+.remainingTime4,
+.remainingTime5 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 54%;
+}
+
+.itemsPrepared1,
+.itemsPrepared2,
+.itemsPrepared3,
+.itemsPrepared4,
+.itemsPrepared5 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 55%;
+}
+
+.timeInUse1,
+.timeInUse2,
+.timeInUse3,
+.timeInUse4,
+.timeInUse5 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
+}
+
+.statusDeliverer1,
+.statusDeliverer2,
+.statusDeliverer3,
+.statusDeliverer4,
+.statusDeliverer5 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 79%;
+}
+
+.currentEdge1,
+.currentEdge2,
+.currentEdge3,
+.currentEdge4,
+.currentEdge5 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 61%;
+}
+
+.arrivalTimeDeliverer1,
+.arrivalTimeDeliverer2,
+.arrivalTimeDeliverer3,
+.arrivalTimeDeliverer4,
+.arrivalTimeDeliverer5 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 65%;
+}
+
+.remainingTimeDeliverer1,
+.remainingTimeDeliverer2,
+.remainingTimeDeliverer3,
+.remainingTimeDeliverer4,
+.remainingTimeDeliverer5 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 54%;
+}
+
+.percentage1,
+.percentage2,
+.percentage3,
+.percentage4,
+.percentage5 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 66%;
+}
+
+.progress1,
+.progress1,
+.progress1,
+.progress1,
+.progress1 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 71%;
+}
+
+.workDeliveries1,
+.workDeliveries2,
+.workDeliveries3,
+.workDeliveries4,
+.workDeliveries5 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 54%;
+}
+
+.workTime1,
+.workTime2,
+.workTime3,
+.workTime4,
+.workTime5 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 36%;
+}
+
+.percentageOvens1,
+.percentageOvens2,
+.percentageOvens3,
+.percentageOvens4,
+.percentageOvens5 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 66%;
+}
+
+.progressOvens {
+    width: 74%;
+    background-color: rgb(236, 234, 234);
+    height: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.progressOvens1,
+.progressOvens2,
+.progressOvens3,
+.progressOvens4,
+.progressOvens5 {
+    background-color: #4caf50;
+}
+
+.progressDeliverers {
+    width: 74%;
+    background-color: rgb(236, 234, 234);
+    height: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.progressDeliverers1,
+.progressDeliverers2,
+.progressDeliverers3,
+.progressDeliverers4,
+.progressDeliverers5 {
+    background-color: #4caf50;
+}
+
+.overviewDatabase {
+    width: 800px;
+    height: 660px;
+    background-color: rgb(236, 234, 234);
+    transform: translate(68%, -99%);
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.tooltipDatabase {
+    border-radius: 10px;
+    position: fixed;
+    display: fixed;
+    flex-direction: column;
+    top: 5px;
+    left: 8px;
+    background-color: white;
+    padding: 10px;
+    width: 760px;
+    height: 630px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.informationsDatabase {
+    position: fixed;
+    display: fixed;
+    flex-direction: column;
+    top: 70px;
+    left: 8px;
+    background-color: white;
+    padding: 10px;
+    width: 760px;
+    height: 500px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    max-width: 100%;
+    overflow-y: hidden;
+}
+
+
+.lineDatabase {
+    width: 760px;
+    height: 3px;
+    background-color: #999;
+    position: absolute;
+    top: 9%;
+}
+
+.search-container {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin: 20px;
+    margin-top: 0px;
+    transform: translate(-2%, -2%);
+    user-select: none;
+}
+
+#search-input {
+    padding: 8px;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 10px 0 0 10px;
+    width: 50%;
+    user-select: none;
+}
+
+#search-button {
+    padding: 8px 12px;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', sans-serif;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    user-select: none;
+}
+
+#search-button:hover {
+    background-color: #0056b3;
+    user-select: none;
+}
+
+#orderStatusCustomTable th {
+    background-color: whitesmoke;
+    color: black;
+    padding: 6px;
+    text-align: left;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+}
+
+#orderStatusCustomTable td {
+    padding: 6px;
+    text-align: left;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+}
+
+#orderStatusCustomTable tr:nth-child(even) {
+    background-color: rgb(236, 234, 234);
+    color: black;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+}
+
+#orderItemsCustomTable th {
+    background-color: whitesmoke;
+    color: black;
+    padding: 6px;
+    text-align: left;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+}
+
+#orderItemsCustomTable td {
+    padding: 6px;
+    text-align: left;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+}
+
+#orderItemsCustomTable tr:nth-child(even) {
+    background-color: whitesmoke;
+    color: black;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+}
+
+.changeTableDatabase {
+    width: 760px;
+    height: 38px;
+    background-color: white;
+    transform: translate(0%, 1420%);
+    border: none;
+    transition: box-shadow 0.3s ease;
+    border-radius: 35px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.changeTableDatabase::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 8px solid #999;
+}
+
+.changeTableDatabase:hover {
+    box-shadow: 0 15px 20px rgba(15, 14, 14, 0.2);
+    transform: translateY(520px);
+}
+
+.changeTableDatabase:hover::before {
+    box-shadow: 0 15px 20px rgba(15, 14, 14, 0.2);
+}
+
+.hidden-container {
+    display: none;
+}
+.hidden-container-db {
+    display: none;
+}
+.message-container li::marker {
+    color: #999;
+}
+
+.incomeProfitBackground {
+    width: 350px;
+    height: 660px;
+    background-color: rgb(236, 234, 234);
+    transform: translate(384%, -199%);
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.incomeProfitPanel {
+    position: fixed;
+    display: fixed;
+    flex-direction: column;
+    top: 5px;
+    background-color: rgb(236, 234, 234);
+    padding: 10px;
+    width: 320px;
+    height: 630px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.totalIncomePanel {
+    border-radius: 10px;
+    position: fixed;
+    display: block;
+    flex-direction: column;
+    top: 6px;
+    left: 0px;
+    background-color: white;
+    padding: 10px;
+    width: 320px;
+    height: 100px;
+    font-size: 28px;
+    font-family: 'Trebuchet MS', sans-serif;
+    text-align: center;
+
+}
+
+.totalIncomePanel span {
+    display: inline-block;
+}
+
+.totalIncomeByDatePanel {
+    border-radius: 10px;
+    position: fixed;
+    display: block;
+    flex-direction: column;
+    top: 130px;
+    left: 0px;
+    background-color: white;
+    padding: 10px;
+    width: 320px;
+    height: 505px;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', sans-serif;
+    text-align: left;
+}
+
+.custom-checkboxWeekly1,
+.custom-checkboxWeekly2,
+.custom-checkboxWeekly3,
+.custom-checkboxWeekly4,
+.custom-checkboxWeekly5,
+.custom-checkboxWeekly6,
+.custom-checkboxWeekly7,
+.custom-checkboxWeekly8,
+.custom-checkboxWeekly9,
+.custom-checkboxWeekly10,
+.custom-checkboxWeekly11,
+.custom-checkboxWeekly12,
+.custom-checkboxWeekly13 {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border: 1px solid #999;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 20px;
+    font-weight: bold;
+    color: transparent;
+}
+
+.weeklyIncome,
+.weeklySells,
+.weeklyItems,
+.weeklyPizza,
+.weeklyPork,
+.weeklyPasta,
+.weeklyChicken,
+.weeklyFish,
+.weeklyDrink,
+.weeklySauce,
+.weeklyHomePizza,
+.weekly4StaggioniPizza,
+.weeklyDiavolaPizza {
+    border-bottom: 1px solid #ececec;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.weeklyIncomeSpan1 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 72%;
+    background-color: white;
+}
+.weeklyIncomeSpan2 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 78%;
+    background-color: white;
+}
+.weeklyIncomeSpan3 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 69%;
+    background-color: white;
+}
+
+.weeklyIncomeSpan4 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 74%;
+    background-color: white;
+}
+
+.weeklyIncomeSpan5 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 57%;
+    background-color: white;
+}
+
+.weeklyIncomeSpan6 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 55%;
+    background-color: white;
+}
+.weeklyIncomeSpan7 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+    background-color: white;
+}
+
+.weeklyIncomeSpan8 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 58%;
+    background-color: white;
+}
+
+.weeklyIncomeSpan9 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 74%;
+    background-color: white;
+}
+.weeklyIncomeSpan10 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 73%;
+    background-color: white;
+}
+
+.weeklyIncomeSpan11 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 62%;
+    background-color: white;
+}
+
+.weeklyIncomeSpan12 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 52%;
+    background-color: white;
+}
+.weeklyIncomeSpan13 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 59%;
+    background-color: white;
+}
+
+.custom-checkboxDaily1,
+.custom-checkboxDaily2,
+.custom-checkboxDaily3,
+.custom-checkboxDaily4,
+.custom-checkboxDaily5,
+.custom-checkboxDaily6,
+.custom-checkboxDaily7,
+.custom-checkboxDaily8,
+.custom-checkboxDaily9,
+.custom-checkboxDaily10,
+.custom-checkboxDaily11,
+.custom-checkboxDaily12,
+.custom-checkboxDaily13 {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border: 1px solid #999;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 20px;
+    font-weight: bold;
+    color: transparent;
+}
+
+.dailyIncome,
+.dailySells,
+.dailyItems,
+.dailyPizza,
+.dailyPork,
+.dailyPasta,
+.dailyChicken,
+.dailyFish,
+.dailyDrink,
+.dailySauce,
+.dailyHomePizza,
+.daily4StaggioniPizza,
+.dailyDiavolaPizza {
+    border-bottom: 1px solid #ececec;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.dailyIncomeSpan1 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 72%;
+    background-color: white;
+}
+
+.dailyIncomeSpan2 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 78%;
+    background-color: white;
+}
+
+.dailyIncomeSpan3 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 69%;
+    background-color: white;
+}
+.dailyIncomeSpan4 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 74%;
+    background-color: white;
+}
+
+.dailyIncomeSpan5 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 57%;
+    background-color: white;
+}
+
+.dailyIncomeSpan6 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 55%;
+    background-color: white;
+}
+.dailyIncomeSpan7 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+    background-color: white;
+}
+
+.dailyIncomeSpan8 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 58%;
+    background-color: white;
+}
+
+.dailyIncomeSpan9 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 74%;
+    background-color: white;
+}
+
+.dailyIncomeSpan10 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 73%;
+    background-color: white;
+}
+
+.dailyIncomeSpan11 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 62%;
+    background-color: white;
+}
+
+.dailyIncomeSpan12 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 52%;
+    background-color: white;
+}
+.dailyIncomeSpan13 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 59%;
+    background-color: white;
+}
+
+
+.custom-checkboxMonthly1,
+.custom-checkboxMonthly2,
+.custom-checkboxMonthly3,
+.custom-checkboxMonthly4,
+.custom-checkboxMonthly5,
+.custom-checkboxMonthly6,
+.custom-checkboxMonthly7,
+.custom-checkboxMonthly8,
+.custom-checkboxMonthly9,
+.custom-checkboxMonthly10,
+.custom-checkboxMonthly11,
+.custom-checkboxMonthly12,
+.custom-checkboxMonthly13 {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border: 1px solid #999;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 20px;
+    font-weight: bold;
+    color: transparent;
+}
+
+.monthlyIncome,
+.monthlySells,
+.monthlyItems,
+.monthlyPizza,
+.monthlyPork,
+.monthlyPasta,
+.monthlyChicken,
+.monthlyFish,
+.monthlyDrink,
+.monthlySauce,
+.monthlyHomePizza,
+.monthly4StaggioniPizza,
+.monthlyDiavolaPizza {
+    border-bottom: 1px solid #ececec;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.monthlyIncomeSpan1 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 72%;
+    background-color: white;
+}
+
+.monthlyIncomeSpan2 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 78%;
+    background-color: white;
+}
+
+.monthlyIncomeSpan3 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 69%;
+    background-color: white;
+}
+.monthlyIncomeSpan4 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 74%;
+    background-color: white;
+}
+
+.monthlyIncomeSpan5 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 57%;
+    background-color: white;
+}
+
+.monthlyIncomeSpan6 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 55%;
+    background-color: white;
+}
+.monthlyIncomeSpan7 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+    background-color: white;
+}
+
+.monthlyIncomeSpan8 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 58%;
+    background-color: white;
+}
+
+.monthlyIncomeSpan9 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 74%;
+    background-color: white;
+}
+.monthlyIncomeSpan10 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 73%;
+    background-color: white;
+}
+
+.monthlyIncomeSpan11 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 62%;
+    background-color: white;
+}
+
+.monthlyIncomeSpan12 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 52%;
+    background-color: white;
+}
+.monthlyIncomeSpan13 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 59%;
+    background-color: white;
+}
+
+
+.custom-checkboxYearly1,
+.custom-checkboxYearly2,
+.custom-checkboxYearly3,
+.custom-checkboxYearly4,
+.custom-checkboxYearly5,
+.custom-checkboxYearly6,
+.custom-checkboxYearly7,
+.custom-checkboxYearly8,
+.custom-checkboxYearly9,
+.custom-checkboxYearly10,
+.custom-checkboxYearly11,
+.custom-checkboxYearly12,
+.custom-checkboxYearly13 {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border: 1px solid #999;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 20px;
+    font-weight: bold;
+    color: transparent;
+}
+
+.yearlyIncome,
+.yearlySells,
+.yearlyItems,
+.yearlyPizza,
+.yearlyPork,
+.yearlyPasta,
+.yearlyChicken,
+.yearlyFish,
+.yearlyDrink,
+.yearlySauce,
+.yearlyHomePizza,
+.yearly4StaggioniPizza,
+.yearlyDiavolaPizza {
+    border-bottom: 1px solid #ececec;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.yearlyIncomeSpan1 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 72%;
+    background-color: white;
+}
+
+.yearlyIncomeSpan2 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 78%;
+    background-color: white;
+}
+
+.yearlyIncomeSpan3 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 69%;
+    background-color: white;
+}
+
+.yearlyIncomeSpan4 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 74%;
+    background-color: white;
+}
+
+.yearlyIncomeSpan5 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 57%;
+    background-color: white;
+}
+
+.yearlyIncomeSpan6 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 55%;
+    background-color: white;
+}
+
+.yearlyIncomeSpan7 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+    background-color: white;
+}
+
+.yearlyIncomeSpan8 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 58%;
+    background-color: white;
+}
+
+.yearlyIncomeSpan9 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 74%;
+    background-color: white;
+}
+
+.yearlyIncomeSpan10 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 73%;
+    background-color: white;
+}
+
+.yearlyIncomeSpan11 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 62%;
+    background-color: white;
+}
+
+.yearlyIncomeSpan12 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 52%;
+    background-color: white;
+}
+
+.yearlyIncomeSpan13 {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 59%;
+    background-color: white;
+}
+
+
+.targetTitle {
+    font-size: 16px;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.success {
+    background-color: #4fd854;
+    border-color: #4fd854;
+    color: white;
+    text-align: center;
+    line-height: 15px;
+}
+
+.error {
+    background-color: red;
+    border-color: red;
+    color: white;
+    text-align: center;
+    line-height: 15px;
+}
+
+.changeDateType {
+    position: absolute;
+    top: 494px;
+    width: 300px;
+    height: 25px;
+    background-color: white;
+    transform: translate(3%, 20%);
+    border: none;
+    transition: box-shadow 0.3s ease;
+    border-radius: 35px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.changeDateType::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 8px solid #999;
+}
+
+.changeDateType:hover {
+    box-shadow: 0 15px 20px rgba(15, 14, 14, 0.2);
+    transform: translate(3%, -25%);
+}
+
+.changeDateType:hover::before {
+    box-shadow: 0 15px 20px rgba(15, 14, 14, 0.2);
+}
+
+.order-items-container,
+.order-status-container {
+    max-height: 500px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.order-items-container::-webkit-scrollbar,
+.order-status-container::-webkit-scrollbar {
+    width: 0;
+}
+
+#orderStatusCustomTable, 
+#orderItemsCustomTable,
+#rawMaterialsTable {
+    width: 100%;
+}
+
+#orderItemsCustomTable thead, 
+#rawMaterialsTable thead {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+}
+
+.rawMaterials-container {
+    max-height: 580px;
+    overflow-y: scroll;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.rawMaterials-container::-webkit-scrollbar{
+    width: 0;
+}
+
+#rawMaterialsTable {
+    width: 100%;
+}
+
+#rawMaterialsTable table {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+#rawMaterialsTable thead {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+}
+
+#rawMaterialsTable th {
+    background-color: whitesmoke;
+    color: black;
+    padding: 6px;
+    text-align: left;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+#rawMaterialsTable td {
+    padding: 6px;
+    text-align: left;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+#rawMaterialsTable tr:nth-child(even) {
+    background-color: whitesmoke;
+    color: black;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    user-select: none;
+}
+
+.low-quantity-row {
+    background-color: rgb(238, 232, 149) !important;
+}
+
+.no-quantity-row {
+    background-color: rgb(231, 147, 147) !important;
+}
+
+.consoleOverviewBackground{
+    height: 150px;
+    width: 543px;
+    background-color: rgb(236, 234, 234);
+    transform: translate(1%, -876%);
+}
+
+.consoleOverview{
+    border-radius: 10px;
+    background-color: white;
+    width: 525px;
+    height: 135px;
+    transform: translate(1.75%, 2.5%);
+
+}
+
+.ovenStatus,
+.delivererStatus,
+.rawMaterialStatus {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    user-select: none;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgb(236, 234, 234);
+    padding-bottom: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 8px;
+}
+
+.dataConsoleBack1 {
+    background-color: white;
+    text-align: middle;
+    width: 30%;
+    display: inline-block;   
+    transform: translate(70%, 0%);
+}
+.dataConsoleBack2 {
+    background-color: white;
+    text-align: middle;
+    width: 30%;
+    display: inline-block;
+    transform: translate(57%, 0%);
+}
+.dataConsoleBack3 {
+    background-color: white;
+    text-align: middle;
+    width: 30%;
+    display: inline-block;
+    transform: translate(32%, 0%);
+}
+
+.loaderContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 0px;
+}
+
+.loaderOvens,
+.loaderDeliverers,
+.loaderRawMaterials {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    animation: spin 1s linear infinite;
+    margin-bottom: 20px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.backgroundSelledItems {
+    height: 450px;
+    width: 543px;
+    background-color: rgb(236, 234, 234);
+    transform: translate(1%, -292%);
+}
+
+.foregroundSelledItems {
+    border-radius: 10px;
+    background-color: white;
+    width: 525px;
+    height: 443px;
+    transform: translate(1.7%, 0%);
+}
+
+.itemsContainerDisplay {
+    background-color: white;
+    width: 504px;
+    height: 350px;
+    transform: translate(0%, 0%);
+    overflow-y: auto;
+    padding: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+}
+
+.itemsContainerDisplay::-webkit-scrollbar {
+    width: 0.5px;
+}
+
+.itemsContainerDisplay::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+.changeItemSection {
+    position: absolute;
+    top: 400px;
+    width: 505px;
+    height: 35px;
+    background-color: white;
+    transform: translate(3.5%, 10%);
+    border: none;
+    transition: box-shadow 0.3s ease;
+    border-radius: 35px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.changeItemSection::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 8px solid #999;
+}
+
+.changeItemSection:hover {
+    box-shadow: 0 15px 20px rgba(15, 14, 14, 0.2);
+    transform: translate(3.5%, -35%);
+}
+
+.changeItemSection:hover::before {
+    box-shadow: 0 15px 20px rgba(15, 14, 14, 0.2);
+}
+
+#pizza-list,
+#pork-list,
+#pasta-list,
+#chicken-list,
+#fish-list,
+#drink-list,
+#sauce-list,
+#all-list {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    user-select: none;
+}
+
+.pizza-title,
+.pork-title,
+.pasta-title,
+.chicken-title,
+.fish-title,
+.drink-title,
+.sauce-title,
+.all-title {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+    user-select: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+.pizza-item,
+.pork-item,
+.pasta-item,
+.chicken-item,
+.fish-item,
+.drink-item,
+.sauce-item,
+.all-item {
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(236, 234, 234);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.progress-barPizza,
+.progress-barPork,
+.progress-barPasta,
+.progress-barChicken,
+.progress-barFish,
+.progress-barDrink,
+.progress-barSauce,
+.progress-barAll {
+    height: 10px;
+    background-color: #ccc;
+    margin-bottom: 5px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.progressPizza,
+.progressPork,
+.progressPasta,
+.progressChicken,
+.progressFish,
+.progressDrink,
+.progressSauce,
+.progressAll {
+    height: 100%;
+    border-radius: 5px;
+}
+
+.lineItemsPizzas,
+.lineItemsPork,
+.lineItemsPasta,
+.lineItemsChicken,
+.lineItemsFish,
+.lineItemsDrink,
+.lineItemsSauce,
+.lineItemsAll {
+    position: relative;
+    width: 90%;
+    height: 2px;
+    background-color: #999;
+    bottom: 0;
+    left: 4%;
+}
+
+.foregroundSelledItemsPizza,
+.foregroundSelledItemsPork,
+.foregroundSelledItemsPasta,
+.foregroundSelledItemsChicken,
+.foregroundSelledItemsFish,
+.foregroundSelledItemsDrink,
+.foregroundSelledItemsSauce,
+.foregroundSelledItemsAll {
+    background-color: white;
+    width: 525px;
+    height: 445px;
+    transform: translate(0%, 0%);
+    border-radius: 10px;
+}
+
+.socialNetworksBackground {
+    background-color: rgb(236, 234, 234);
+    height: 250px;
+    width: 354px;    
+    transform: translate(378.5%, -625.5%);
+}
+
+.socialNetworks {
+    border-radius: 10px;
+    background-color: white;
+    height: 240px;
+    width: 340px;
+    transform: translate(1.5%, 1.5%);
+}
+.socialButtonFacebook {
+    position: absolute;
+    top: 400px;
+    width: 250px;
+    height: 35px;
+    background-color: #3b5998;
+    color: #ffffff;
+    transform: translate(22%, -1050%);
+    border: none;
+    transition: box-shadow 0.3s ease;
+    border-radius: 35px;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.socialButtonFacebook img {
+    width: 27px;
+    height: auto;
+    margin-right: 0px;
+    height: 22px;
+}
+
+.socialButtonFacebook::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.socialButtonFacebook:hover {
+    box-shadow: 0 15px 20px rgba(15, 14, 14, 0.2);
+}
+
+.socialButtonFacebook:hover::before {
+    box-shadow: 0 15px 20px rgba(15, 14, 14, 0.2);
+}
+
+.socialButtonInstagram {
+    position: absolute;
+    top: 400px;
+    width: 250px;
+    height: 35px;
+    background-color: #e1306c;
+    color: #ffffff;
+    transform: translate(22%, -900%);
+    border: none;
+    transition: box-shadow 0.3s ease;
+    border-radius: 35px;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.socialButtonInstagram img {
+    width: 25px;
+    height: auto;
+    margin-right: 0px;
+    height: 25px;
+}
+
+.socialButtonInstagram::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.socialButtonInstagram:hover {
+    box-shadow: 0 15px 20px rgba(15, 14, 14, 0.2);
+}
+
+.socialButtonInstagram:hover::before {
+    box-shadow: 0 15px 20px rgba(15, 14, 14, 0.2);
+}
+
+.socialButtonTwitter {
+    position: absolute;
+    top: 400px;
+    width: 250px;
+    height: 35px;
+    background-color: #1DA1F2;
+    color: #ffffff;
+    transform: translate(22%, -750%);
+    border: none;
+    transition: box-shadow 0.3s ease;
+    border-radius: 35px;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.socialButtonTwitter img {
+    width: 25px;
+    height: auto;
+    margin-right: 0px;
+    height: 25px;
+}
+
+.socialButtonTwitter::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.socialButtonTwitter:hover {
+    box-shadow: 0 15px 20px rgba(15, 14, 14, 0.2);
+}
+
+.socialButtonTwitter:hover::before {
+    box-shadow: 0 15px 20px rgba(15, 14, 14, 0.2);
+}
+
+.socialButtonYoutube {
+    position: absolute;
+    top: 400px;
+    width: 250px;
+    height: 35px;
+    background-color: #FF0000;
+    color: #ffffff;
+    transform: translate(22%, -600%);
+    border: none;
+    transition: box-shadow 0.3s ease;
+    border-radius: 35px;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.socialButtonYoutube img {
+    width: 25px;
+    height: auto;
+    margin-right: 0px;
+    height: 25px;
+}
+
+.socialButtonYoutube::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.socialButtonYoutube:hover {
+    box-shadow: 0 15px 20px rgba(15, 14, 14, 0.2);
+}
+
+.socialButtonYoutube:hover::before {
+    box-shadow: 0 15px 20px rgba(15, 14, 14, 0.2);
+}
+
+.socialButtonFacebook,
+.socialButtonInstagram,
+.socialButtonTwitter,
+.socialButtonYoutube {
+    text-decoration: none;
+}
+
+.statusCirclePercentagesBackground {
+    background-color: rgb(236, 234, 234);
+    height: 352px;
+    width: 355px;
+    transform: translate(377.3%, -615%);
+}
+
+.statusCirclePercentages {
+    border-radius: 10px;
+    background-color: white;
+    height: 347px;
+    width: 340px;
+    transform: translate(1.5%, 0.5%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.progressCirclePercentages {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    background-color: white;
+    transform: translate(45%, 5%);
+}
+
+.progress-containerOverall {
+    width: 300px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #999;
+    position: relative;
+    margin: 20px 0;
+    transform: translate(-20%, 150%);
+    overflow: hidden;
+}
+
+.progress-barOverall {
+    height: 100%;
+}
+
+.progress-segmentOverall {
+    height: 100%;
+    position: absolute;
+}
+
+.progressCircleLine {
+    width: 320px;
+    height: 3px;
+    background-color: #999;
+    position: absolute;
+    top: 59%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.percentagesContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: white;
+    width: 320px;
+    height: 135px;
+    transform: translate(5%, 10%);
+    gap: 0px;
+}
+
+.percentagesContainer>div {
+    display: flex;
+    align-items: center;
+    margin-right: -10px;
+}
+
+.percentagesContainer>div:last-child {
+    margin-right: 0;
+}
+
+.statusPending::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #b17d4d;
+    margin-right: 5px;
+}
+
+.statusProcessing::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #0401bb;
+    margin-right: 5px;
+}
+
+.statusIn_Preparation::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #0190bb;
+    margin-right: 5px;
+}
+
+.statusQuantity_In_Progress::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #01bb2f;
+    margin-right: 5px;
+}
+
+.statusDone::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #9fbb01;
+    margin-right: 5px;
+}
+
+.statusReady_For_Delivery::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #bb5b01;
+    margin-right: 5px;
+}
+
+.statusIn_Delivery::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #000000;
+    margin-right: 5px;
+}
+
+.statusDelivered::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #9806b6;
+    margin-right: 5px;
+}
+
+.statusCanceled::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #ff0606;
+    margin-right: 5px;
+}
+
+.progressBarCircle {
+    stroke: red;
+}
+
+.graphicsBackground {
+    width: 795px;
+    height: 603px;
+    background-color: rgb(236, 234, 234);
+    transform: translate(68.8%, -417.7%);
+}
+
+.graphicsDisplay {
+    border-radius: 10px;
+    width: 781px;
+    height: 293px;
+    background-color: white;
+    transform: translate(0.5%, 2%);
+}
+
+.graphicsDisplayIn {
+    border-radius: 10px;
+    width: 765px;
+    height: 293px;
+    background-color: white;
+    transform: translate(1%, 0%);
+}
+
+.dashboardStats {
+    border-radius: 10px;
+    width: 781px;
+    height: 293px;
+    background-color: white;
+    transform: translate(0.5%, 4%);
+}
+
+
+.totalOrdersMDiv,
+.totalOrdersDDiv,
+.totalOrdersWDiv,
+.totalOrdersYDiv{
+    border: 4px solid rgb(236, 234, 234);
+    width: 200px;
+    height: 100px;
+    background-color: white;
+    border-radius: 15px;
+    transform: translate(10%, 10%);
+}
+
+.totalItemsMDiv,
+.totalItemsDDiv,
+.totalItemsWDiv,
+.totalItemsYDiv {
+    border: 4px solid rgb(236, 234, 234);
+    width: 200px;
+    height: 100px;
+    background-color: white;
+    border-radius: 15px;
+    transform: translate(140%, -90%);
+}
+
+.totalIncomeMDiv,
+.totalIncomeDDiv,
+.totalIncomeWDiv,
+.totalIncomeYDiv {
+    border: 4px solid rgb(236, 234, 234);
+    width: 200px;
+    height: 100px;
+    background-color: white;
+    border-radius: 15px;
+    transform: translate(270%, -190%);
+}
+
+.totalSpendMDiv,
+.totalSpendDDiv,
+.totalSpendWDiv,
+.totalSpendYDiv {
+    border: 4px solid rgb(236, 234, 234);
+    width: 200px;
+    height: 100px;
+    background-color: white;
+    border-radius: 15px;
+    transform: translate(270%, -150%);
+}
+
+.totalCustomersMDiv,
+.totalCustomersDDiv,
+.totalCustomersWDiv,
+.totalCustomersYDiv {
+    border: 4px solid rgb(236, 234, 234);
+    width: 200px;
+    height: 100px;
+    background-color: white;
+    border-radius: 15px;
+    transform: translate(140%, -250%);
+}
+
+.totalCanceledOrdersMDiv,
+.totalCanceledOrdersDDiv,
+.totalCanceledOrdersWDiv,
+.totalCanceledOrdersYDiv {
+    border: 4px solid rgb(236, 234, 234);
+    width: 200px;
+    height: 100px;
+    background-color: white;
+    border-radius: 15px;
+    transform: translate(10%, -350%);
+}
+
+.totalOrdersM,
+.totalItemsM,
+.totalIncomeM,
+.totalCanceledOrdersM,
+.totalCustomersM,
+.totalSpendM,
+.totalOrdersD,
+.totalItemsD,
+.totalIncomeD,
+.totalCanceledOrdersD,
+.totalCustomersD,
+.totalSpendD,
+.totalOrdersW,
+.totalItemsW,
+.totalIncomeW,
+.totalCanceledOrdersW,
+.totalCustomersW,
+.totalSpendW,
+.totalOrdersY,
+.totalItemsY,
+.totalIncomeY,
+.totalCanceledOrdersY,
+.totalCustomersY,
+.totalSpendY {
+    position: absolute;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    transform: translate(15%, 50%);
+}
+
+.totalCanceledOrdersM,
+.totalCanceledOrdersD,
+.totalCanceledOrdersW,
+.totalCanceledOrdersY {
+    position: absolute;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    transform: translate(10%, 50%);
+}
+
+.totalOrdersMCalculate,
+.totalItemsMCalculate,
+.totalIncomeMCalculate,
+.totalCanceledOrdersMCalculate,
+.totalCustomersMCalculate,
+.totalSpendMCalculate,
+.totalOrdersDCalculate,
+.totalItemsDCalculate,
+.totalIncomeDCalculate,
+.totalCanceledOrdersDCalculate,
+.totalCustomersDCalculate,
+.totalSpendDCalculate,
+.totalOrdersWCalculate,
+.totalItemsWCalculate,
+.totalIncomeWCalculate,
+.totalCanceledOrdersWCalculate,
+.totalCustomersWCalculate,
+.totalSpendWCalculate,
+.totalOrdersYCalculate,
+.totalItemsYCalculate,
+.totalIncomeYCalculate,
+.totalCanceledOrdersYCalculate,
+.totalCustomersYCalculate,
+.totalSpendYCalculate {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    transform: translate(8%, 150%);
+    text-align: left;
+}
+
+.totalOrdersMPercentage,
+.totalItemsMPercentage,
+.totalIncomeMPercentage,
+.totalCanceledOrdersMPercentage,
+.totalCustomersMPercentage,
+.totalSpendMPercentage,
+.totalOrdersDPercentage,
+.totalItemsDPercentage,
+.totalIncomeDPercentage,
+.totalCanceledOrdersDPercentage,
+.totalCustomersDPercentage,
+.totalSpendDPercentage,
+.totalOrdersWPercentage,
+.totalItemsWPercentage,
+.totalIncomeWPercentage,
+.totalCanceledOrdersWPercentage,
+.totalCustomersWPercentage,
+.totalSpendWPercentage,
+.totalOrdersYPercentage,
+.totalItemsYPercentage,
+.totalIncomeYPercentage,
+.totalCanceledOrdersYPercentage,
+.totalCustomersYPercentage,
+.totalSpendYPercentage{
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    transform: translate(8%, 370%);
+}
+
+.arrow-up {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-bottom: 4px solid green;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+.arrow-down {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 4px solid red;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+.black-text{
+    color: black;
+}
+
+.changeDashboardRight {
+    position: absolute;
+    top: 400px;
+    width: 40px;
+    height: 60px;
+    background-color: white;
+    transform: translate(1820%, -483%) rotate(-90deg);
+    border: none;
+    transition: box-shadow 0.3s ease;
+    border-radius: 35px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.changeDashboardRight::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 8px solid #999;
+}
+
+.changeDashboardRight:hover {
+    box-shadow: 0 -5px 5px rgba(15, 14, 14, 0.2);
+}
+
+.changeDashboardRight:hover::before {
+    box-shadow: 0 -5px 5px rgba(15, 14, 14, 0.2);
+}
+
+.changeDashboardLeft {
+    position: absolute;
+    top: 400px;
+    width: 40px;
+    height: 60px;
+    background-color: white;
+    transform: translate(30%, -483%) rotate(90deg);
+    border: none;
+    transition: box-shadow 0.3s ease;
+    border-radius: 35px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.changeDashboardLeft::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 8px solid #999;
+}
+
+.changeDashboardLeft:hover {
+    box-shadow: 0 -5px 5px rgba(15, 14, 14, 0.2);
+}
+
+.changeDashboardLeft:hover::before {
+    box-shadow: 0 -5px 5px rgba(15, 14, 14, 0.2);
+}
+
+.dashboardStatsMonthly, 
+.dashboardStatsDaily,
+.dashboardStatsWeekly,
+.dashboardStatsYearly {
+    border-radius: 10px;
+    width: 781px;
+    height: 293px;
+    background-color: white;
+    transform: translate(0%, 0%);
+}
+
+.hidden-container-dashboard {
+    display: none;
+}

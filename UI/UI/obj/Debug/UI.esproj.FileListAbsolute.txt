@@ -1,0 +1,8 @@
+C:\Users\horva\OneDrive\Desktop\InternshipSiemens\Angular\UI\UI\obj\Debug\UI.esproj.SuggestedBindingRedirects.cache
+C:\Users\horva\OneDrive\Desktop\InternshipSiemens\Angular\UI\UI\obj\Debug\UI.esproj.CoreCompileInputs.cache
+D:\Facultate\Siemens\InternshipSiemens\ConnectorTypeScript\UI\UI\obj\Debug\UI.esproj.SuggestedBindingRedirects.cache
+D:\Facultate\Siemens\InternshipSiemens\ConnectorTypeScript\UI\UI\obj\Debug\UI.esproj.CoreCompileInputs.cache
+D:\Facultate\Siemens\InternshipSiemens\UI\UI\obj\Debug\UI.esproj.SuggestedBindingRedirects.cache
+D:\Facultate\Siemens\InternshipSiemens\UI\UI\obj\Debug\UI.esproj.CoreCompileInputs.cache
+D:\Siemens\UIOnly\UI\UI\obj\Debug\UI.esproj.SuggestedBindingRedirects.cache
+D:\Siemens\UIOnly\UI\UI\obj\Debug\UI.esproj.CoreCompileInputs.cache

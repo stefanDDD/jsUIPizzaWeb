@@ -1,0 +1,1183 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <link rel="stylesheet" href="stylesOverview.css">
+  <link rel="stylesheet" href="stylesNavBar.css">
+  <script src="./jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+
+
+
+</head>
+
+<body>
+  <div class="navbar">
+    <a class="active" href="./Overview.html" draggable="false">Overview</a>
+    <img src="./jpg/overview.png" alt="Icon Home" class="iconMenu1">
+    <a href="./Database.html" draggable="false">Database</a>
+    <img src="./jpg/database.png" alt="Icon Database" class="iconMenu2">
+    <a href="Appliances.html" draggable="false">Appliances</a>
+    <img src="./jpg/appliances.png" alt="Icon Appliances" class="iconMenu3">
+    <a href="./Map.html" draggable="false">Map</a>
+    <img src="./jpg/map.png" alt="Icon Map" class="iconMenu4">
+    <a href="./Dynamic.html" draggable="false">Dynamic</a>
+    <img src="./jpg/dynamic.png" alt="Icon Dynamic" class="iconMenu5">
+    <a href="./RawMaterials.html" draggable="false">Stock</a>
+    <img src="./jpg/rawMaterials.png" alt="Icon RawMaterials" class="iconMenu6">
+  </div>
+
+  <div class="overviewPanel">
+    <div class="overviewOvens">
+
+      <div class="tooltipOvens">
+        <button class="imgContainer" onclick="showPanelOven(1)">
+          <img src="./jpg/ovenFree.png" alt="Oven 1" class="img1" title="Oven 1" id="ovenImageSts1">
+          <span>Oven 1</span>
+        </button>
+        <button class="imgContainer" onclick="showPanelOven(2)">
+          <img src="./jpg/ovenFree.png" alt="Oven 2" class="img2" title="Oven 2" id="ovenImageSts2">
+          <span>Oven 2</span>
+        </button>
+        <button class="imgContainer" onclick="showPanelOven(3)">
+          <img src="./jpg/ovenFree.png" alt="Oven 3" class="img3" title="Oven 3" id="ovenImageSts3">
+          <span>Oven 3</span>
+        </button>
+        <button class="imgContainer" onclick="showPanelOven(4)">
+          <img src="./jpg/ovenFree.png" alt="Oven 4" class="img4" title="Oven 4" id="ovenImageSts4">
+          <span>Oven 4</span>
+        </button>
+        <button class="imgContainer" onclick="showPanelOven(5)">
+          <img src="./jpg/ovenFree.png" alt="Oven 5" class="img5" title="Oven 5" id="ovenImageSts5">
+          <span>Oven 5</span>
+        </button>
+      </div>
+      <div class="backgroundInformationsOvens">
+        <div class="informationsOvensCover">
+          <div class="informationsOvensCoverDisplay default-panelOven">
+            <div class="dataListOvens_rowDefault">
+              <span>Prep. Item: <span class="prepareItem1"></span></span>
+            </div>
+            <div class="dataListOvens_rowDefault">
+              <span>Progress: <div class="progress-container">
+                  <div class="progress-bar progressOvens1" id="oven1ProgressBar"></div>
+                </div></span>
+            </div>
+            <div class="dataListOvens_rowDefault">
+              <span>Prep. Item: <span class="prepareItem2"></span></span>
+            </div>
+            <div class="dataListOvens_rowDefault">
+              <span>Progress: <div class="progress-container">
+                  <div class="progress-bar progressOvens2" id="oven1ProgressBar"></div>
+                </div></span>
+            </div>
+            <div class="dataListOvens_rowDefault">
+              <span>Prep. Item: <span class="prepareItem3"></span></span>
+            </div>
+            <div class="dataListOvens_rowDefault">
+              <span>Progress: <div class="progress-container">
+                  <div class="progress-bar progressOvens3" id="oven1ProgressBar"></div>
+                </div></span>
+            </div>
+            <div class="dataListOvens_rowDefault">
+              <span>Prep. Item: <span class="prepareItem4"></span></span>
+            </div>
+            <div class="dataListOvens_rowDefault">
+              <span>Progress: <div class="progress-container">
+                  <div class="progress-bar progressOvens4" id="oven1ProgressBar"></div>
+                </div></span>
+            </div>
+            <div class="dataListOvens_rowDefault">
+              <span>Prep. Item: <span class="prepareItem5"></span></span>
+            </div>
+            <div class="dataListOvens_rowDefault">
+              <span>Progress: <div class="progress-container">
+                  <div class="progress-bar progressOvens5" id="oven1ProgressBar"></div>
+                </div></span>
+            </div>
+          </div>
+          <div class="informationsOvens" id="panelOven1">
+            <div class="currentSelectedOven">
+              <span>Oven 1 </span>
+            </div>
+            <div class="line"></div>
+            <div class="dataListOvens_row">
+              <span>Status: <span class="statusOven1"></span></span>
+            </div>
+            <div class="dataListOvens_row">
+              <span>Prep. Item: <span class="prepareItem1"></span></span>
+            </div>
+            <div class="dataListOvens_row">
+              <span>Prepared Time: <span class="prepareTime1"></span></span>
+            </div>
+            <div class="dataListOvens_row">
+              <span>Remaining Time: <span class="remainingTime1"></span></span>
+            </div>
+            <div class="dataListOvens_row">
+              <span>Percentage: <span class="percentageOvens1"></span></span>
+            </div>
+            <div class="dataListOvens_row">
+              <span>Progress: <div class="progress-container">
+                  <div class="progress-bar progressOvens1" id="oven1ProgressBar"></div>
+                </div></span>
+            </div>
+            <div class="dataListOvens_row">
+              <span>Items Prepared: <span class="itemsPrepared1"></span></span>
+            </div>
+            <div class="dataListOvens_row">
+              <span>Percentage in Use: <span class="timeInUse1"></span></span>
+            </div>
+          </div>
+
+          <div class="informationsOvens" id="panelOven2">
+            <div class="currentSelectedOven">
+              <span>Oven 2 </span>
+            </div>
+            <div class="line"></div>
+            <div class="dataListOvens_row">
+              <span>Status: <span class="statusOven2"></span></span>
+            </div>
+            <div class="dataListOvens_row">
+              <span>Prep. Item: <span class="prepareItem2"></span></span>
+            </div>
+            <div class="dataListOvens_row">
+              <span>Prepared Time: <span class="prepareTime2"></span></span>
+            </div>
+            <div class="dataListOvens_row">
+              <span>Remaining Time: <span class="remainingTime2"></span></span>
+            </div>
+            <div class="dataListOvens_row">
+              <span>Percentage: <span class="percentageOvens2"></span></span>
+            </div>
+            <div class="dataListOvens_row">
+              <span>Progress: <div class="progress-container">
+                  <div class="progress-bar progressOvens2" id="oven2ProgressBar"></div>
+                </div></span>
+            </div>
+            <div class="dataListOvens_row">
+              <span>Items Prepared: <span class="itemsPrepared2"></span></span>
+            </div>
+            <div class="dataListOvens_row">
+              <span>Percentage in Use: <span class="timeInUse2"></span></span>
+            </div>
+          </div>
+
+          <div class="informationsOvens" id="panelOven3">
+            <div class="currentSelectedOven">
+              <span>Oven 3 </span>
+            </div>
+            <div class="line"></div>
+            <div class="dataListOvens_row">
+              <span>Status: <span class="statusOven3"></span></span>
+            </div>
+            <div class="dataListOvens_row">
+              <span>Prep. Item: <span class="prepareItem3"></span></span>
+            </div>
+            <div class="dataListOvens_row">
+              <span>Prepared Time: <span class="prepareTime3"></span></span>
+            </div>
+            <div class="dataListOvens_row">
+              <span>Remaining Time: <span class="remainingTime3"></span></span>
+            </div>
+            <div class="dataListOvens_row">
+              <span>Percentage: <span class="percentageOvens3"></span></span>
+            </div>
+            <div class="dataListOvens_row">
+              <span>Progress: <div class="progress-container">
+                  <div class="progress-bar progressOvens3" id="oven3ProgressBar"></div>
+                </div></span>
+            </div>
+            <div class="dataListOvens_row">
+              <span>Items Prepared: <span class="itemsPrepared3"></span></span>
+            </div>
+            <div class="dataListOvens_row">
+              <span>Percentage in Use: <span class="timeInUse3"></span></span>
+            </div>
+          </div>
+
+          <div class="informationsOvens" id="panelOven4">
+            <div class="currentSelectedOven">
+              <span>Oven 4 </span>
+            </div>
+            <div class="line"></div>
+            <div class="dataListOvens_row">
+              <span>Status: <span class="statusOven4"></span></span>
+            </div>
+            <div class="dataListOvens_row">
+              <span>Prep. Item: <span class="prepareItem4"></span></span>
+            </div>
+            <div class="dataListOvens_row">
+              <span>Prepared Time: <span class="prepareTime4"></span></span>
+            </div>
+            <div class="dataListOvens_row">
+              <span>Remaining Time: <span class="remainingTime4"></span></span>
+            </div>
+            <div class="dataListOvens_row">
+              <span>Percentage: <span class="percentageOvens4"></span></span>
+            </div>
+            <div class="dataListOvens_row">
+              <span>Progress: <div class="progress-container">
+                  <div class="progress-bar progressOvens4" id="oven4ProgressBar"></div>
+                </div></span>
+            </div>
+            <div class="dataListOvens_row">
+              <span>Items Prepared: <span class="itemsPrepared4"></span></span>
+            </div>
+            <div class="dataListOvens_row">
+              <span>Percentage in Use: <span class="timeInUse4"></span></span>
+            </div>
+
+          </div>
+
+          <div class="informationsOvens" id="panelOven5">
+            <div class="currentSelectedOven">
+              <span>Oven 5 </span>
+            </div>
+            <div class="line"></div>
+            <div class="dataListOvens_row">
+              <span>Status: <span class="statusOven5"></span></span>
+            </div>
+            <div class="dataListOvens_row">
+              <span>Prep. Item: <span class="prepareItem5"></span></span>
+            </div>
+            <div class="dataListOvens_row">
+              <span>Prepared Time: <span class="prepareTime5"></span></span>
+            </div>
+            <div class="dataListOvens_row">
+              <span>Remaining Time: <span class="remainingTime5"></span></span>
+            </div>
+            <div class="dataListOvens_row">
+              <span>Percentage: <span class="percentageOvens5"></span></span>
+            </div>
+            <div class="dataListOvens_row">
+              <span>Progress: <div class="progress-container">
+                  <div class="progress-bar progressOvens5" id="oven5ProgressBar"></div>
+                </div></span>
+            </div>
+            <div class="dataListOvens_row">
+              <span>Items Prepared: <span class="itemsPrepared5"></span></span>
+            </div>
+            <div class="dataListOvens_row">
+              <span>Percentage in Use: <span class="timeInUse5"></span></span>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="overviewDeliverers">
+
+      <div class="tooltipDeliverers">
+        <button class="imgContainerDeliverers" onclick="showPanelDeliverer(1)">
+          <img src="./jpg/delivererFree.png" alt="Deliverer 1" class="img1" title="Deliverer 1" id="delivererImageSts1">
+          <span>Deliverer 1</span>
+        </button>
+        <button class="imgContainerDeliverers" onclick="showPanelDeliverer(2)">
+          <img src="./jpg/delivererFree.png" alt="Deliverer 2" class="img2" title="Deliverer 2" id="delivererImageSts2">
+          <span>Deliverer 2</span>
+        </button>
+        <button class="imgContainerDeliverers" onclick="showPanelDeliverer(3)">
+          <img src="./jpg/delivererFree.png" alt="Deliverer 3" class="img3" title="Deliverer 3" id="delivererImageSts3">
+          <span>Deliverer 3</span>
+        </button>
+        <button class="imgContainerDeliverers" onclick="showPanelDeliverer(4)">
+          <img src="./jpg/delivererFree.png" alt="Deliverer 4" class="img4" title="Deliverer 4" id="delivererImageSts4">
+          <span>Deliverer 4</span>
+        </button>
+        <button class="imgContainerDeliverers" onclick="showPanelDeliverer(5)">
+          <img src="./jpg/delivererFree.png" alt="Deliverer 5" class="img5" title="Deliverer 5" id="delivererImageSts5">
+          <span>Deliverer 5</span>
+        </button>
+      </div>
+
+      <div class="backgroundInformationsDeliverers">
+        <div class="informationsDeliverersCover">
+          <div class="informationsDeliverersCoverDisplay default-panelDeliverer">
+
+            <div class="dataListDeliverer_rowDefault">
+              <span>Current Edge: <span class="currentEdge1"></span></span>
+            </div>
+            <div class="dataListDeliverer_rowDefault">
+              <span>Progress: <div class="progress-containerDeliverer">
+                  <div class="progress-barDeliverer progressDeliverer1" id="deliverer1ProgressBar"></div>
+                </div></span>
+            </div>
+            <div class="dataListDeliverer_rowDefault">
+              <span>Current Edge: <span class="currentEdge2"></span></span>
+            </div>
+            <div class="dataListDeliverer_rowDefault">
+              <span>Progress: <div class="progress-containerDeliverer">
+                  <div class="progress-barDeliverer progressDeliverer2" id="deliverer1ProgressBar"></div>
+                </div></span>
+            </div>
+            <div class="dataListDeliverer_rowDefault">
+              <span>Current Edge: <span class="currentEdge3"></span></span>
+            </div>
+            <div class="dataListDeliverer_rowDefault">
+              <span>Progress: <div class="progress-containerDeliverer">
+                  <div class="progress-barDeliverer progressDeliverer3" id="deliverer1ProgressBar"></div>
+                </div></span>
+            </div>
+            <div class="dataListDeliverer_rowDefault">
+              <span>Current Edge: <span class="currentEdge4"></span></span>
+            </div>
+            <div class="dataListDeliverer_rowDefault">
+              <span>Progress: <div class="progress-containerDeliverer">
+                  <div class="progress-barDeliverer progressDeliverer4" id="deliverer1ProgressBar"></div>
+                </div></span>
+            </div>
+            <div class="dataListDeliverer_rowDefault">
+              <span>Current Edge: <span class="currentEdge5"></span></span>
+            </div>
+            <div class="dataListDeliverer_rowDefault">
+              <span>Progress: <div class="progress-containerDeliverer">
+                  <div class="progress-barDeliverer progressDeliverer5" id="deliverer1ProgressBar"></div>
+                </div></span>
+            </div>
+          </div>
+          <div class="informationsDeliverers" id="panelDeliverer1">
+            <div class="currentSelectedDeliverer">
+              <span>Deliverer 1 </span>
+            </div>
+            <div class="line"></div>
+            <div class="dataListDeliverer_row">
+              <span>Status: <span class="statusDeliverer1"></span></span>
+            </div>
+            <div class="dataListDeliverer_row">
+              <span>Current Edge: <span class="currentEdge1"></span></span>
+            </div>
+            <div class="dataListDeliverer_row">
+              <span>Client Time: <span class="arrivalTimeDeliverer1"></span></span>
+            </div>
+            <div class="dataListDeliverer_row">
+              <span>Remaining Time: <span class="remainingTimeDeliverer1"></span></span>
+            </div>
+            <div class="dataListDeliverer_row">
+              <span>Percentage: <span class="percentage1"></span></span>
+            </div>
+            <div class="dataListDeliverer_row">
+              <span>Progress: <div class="progress-containerDeliverer">
+                  <div class="progress-barDeliverer progressDeliverer1" id="deliverer1ProgressBar"></div>
+                </div></span>
+            </div>
+            <div class="dataListDeliverer_row">
+              <span>Work Deliveries: <span class="workDeliveries1"></span></span>
+            </div>
+            <div class="dataListDeliverer_row">
+              <span>Percentage Work Time: <span class="workTime1"></span></span>
+            </div>
+
+          </div>
+
+          <div class="informationsDeliverers" id="panelDeliverer2">
+            <div class="currentSelectedDeliverer">
+              <span>Deliverer 2 </span>
+            </div>
+            <div class="line"></div>
+            <div class="dataListDeliverer_row">
+              <span>Status: <span class="statusDeliverer2"></span></span>
+            </div>
+            <div class="dataListDeliverer_row">
+              <span>Current Edge: <span class="currentEdge2"></span></span>
+            </div>
+            <div class="dataListDeliverer_row">
+              <span>Client Time: <span class="arrivalTimeDeliverer2"></span></span>
+            </div>
+            <div class="dataListDeliverer_row">
+              <span>Remaining Time: <span class="remainingTimeDeliverer2"></span></span>
+            </div>
+            <div class="dataListDeliverer_row">
+              <span>Percentage: <span class="percentage2"></span></span>
+            </div>
+            <div class="dataListDeliverer_row">
+              <span>Progress: <div class="progress-containerDeliverer">
+                  <div class="progress-barDeliverer progressDeliverer2" id="deliverer2ProgressBar"></div>
+                </div></span>
+            </div>
+            <div class="dataListDeliverer_row">
+              <span>Work Deliveries: <span class="workDeliveries2"></span></span>
+            </div>
+            <div class="dataListDeliverer_row">
+              <span>Percentage Work Time: <span class="workTime2"></span></span>
+            </div>
+
+          </div>
+
+          <div class="informationsDeliverers" id="panelDeliverer3">
+            <div class="currentSelectedDeliverer">
+              <span>Deliverer 3 </span>
+            </div>
+            <div class="line"></div>
+            <div class="dataListDeliverer_row">
+              <span>Status: <span class="statusDeliverer3"></span></span>
+            </div>
+            <div class="dataListDeliverer_row">
+              <span>Current Edge: <span class="currentEdge3"></span></span>
+            </div>
+            <div class="dataListDeliverer_row">
+              <span>Client Time: <span class="arrivalTimeDeliverer3"></span></span>
+            </div>
+            <div class="dataListDeliverer_row">
+              <span>Remaining Time: <span class="remainingTimeDeliverer3"></span></span>
+            </div>
+            <div class="dataListDeliverer_row">
+              <span>Percentage: <span class="percentage3"></span></span>
+            </div>
+            <div class="dataListDeliverer_row">
+              <span>Progress: <div class="progress-containerDeliverer">
+                  <div class="progress-barDeliverer progressDeliverer3" id="deliverer3ProgressBar"></div>
+                </div></span>
+            </div>
+            <div class="dataListDeliverer_row">
+              <span>Work Deliveries: <span class="workDeliveries3"></span></span>
+            </div>
+            <div class="dataListDeliverer_row">
+              <span>Percentage Work Time: <span class="workTime3"></span></span>
+            </div>
+
+          </div>
+
+          <div class="informationsDeliverers" id="panelDeliverer4">
+            <div class="currentSelectedDeliverer">
+              <span>Deliverer 4 </span>
+            </div>
+            <div class="line"></div>
+            <div class="dataListDeliverer_row">
+              <span>Status: <span class="statusDeliverer4"></span></span>
+            </div>
+            <div class="dataListDeliverer_row">
+              <span>Current Edge: <span class="currentEdge4"></span></span>
+            </div>
+            <div class="dataListDeliverer_row">
+              <span>Client Time: <span class="arrivalTimeDeliverer4"></span></span>
+            </div>
+            <div class="dataListDeliverer_row">
+              <span>Remaining Time: <span class="remainingTimeDeliverer4"></span></span>
+            </div>
+            <div class="dataListDeliverer_row">
+              <span>Percentage: <span class="percentage4"></span></span>
+            </div>
+            <div class="dataListDeliverer_row">
+              <span>Progress: <div class="progress-containerDeliverer">
+                  <div class="progress-barDeliverer progressDeliverer4" id="deliverer4ProgressBar"></div>
+                </div></span>
+            </div>
+            <div class="dataListDeliverer_row">
+              <span>Work Deliveries: <span class="workDeliveries4"></span></span>
+            </div>
+            <div class="dataListDeliverer_row">
+              <span>Percentage Work Time: <span class="workTime4"></span></span>
+            </div>
+
+          </div>
+
+          <div class="informationsDeliverers" id="panelDeliverer5">
+            <div class="currentSelectedDeliverer">
+              <span>Deliverer 5 </span>
+            </div>
+            <div class="line"></div>
+            <div class="dataListDeliverer_row">
+              <span>Status: <span class="statusDeliverer5"></span></span>
+            </div>
+            <div class="dataListDeliverer_row">
+              <span>Current Edge: <span class="currentEdge5"></span></span>
+            </div>
+            <div class="dataListDeliverer_row">
+              <span>Client Time: <span class="arrivalTimeDeliverer5"></span></span>
+            </div>
+            <div class="dataListDeliverer_row">
+              <span>Remaining Time: <span class="remainingTimeDeliverer5"></span></span>
+            </div>
+            <div class="dataListDeliverer_row">
+              <span>Percentage: <span class="percentage5"></span></span>
+            </div>
+            <div class="dataListDeliverer_row">
+              <span>Progress: <div class="progress-containerDeliverer">
+                  <div class="progress-barDeliverer progressDeliverer5" id="deliverer5ProgressBar"></div>
+                </div></span>
+            </div>
+            <div class="dataListDeliverer_row">
+              <span>Work Deliveries: <span class="workDeliveries5"></span></span>
+            </div>
+            <div class="dataListDeliverer_row">
+              <span>Percentage Work Time: <span class="workTime5"></span></span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="overviewDatabase">
+      <div class="tooltipDatabase">
+        <div class="search-container">
+          <input type="text" id="search-input" placeholder="Search...">
+          <button id="search-button">Search</button>
+        </div>
+        <div class="lineDatabase"></div>
+        <div class="informationsDatabase">
+          <div class="rawMaterials-container">
+            <table id="rawMaterialsTable" cellpadding="0">
+            </table>
+          </div>
+          <div class="order-status-container hidden-container-db">
+            <table id="orderStatusCustomTable">
+            </table>
+          </div>
+          <div class="order-items-container hidden-container-db">
+            <table id="orderItemsCustomTable">
+            </table>
+          </div>
+        </div>
+        <button onclick="showTable()" class="changeTableDatabase">
+        </button>
+      </div>
+    </div>
+    <div class="incomeProfitBackground">
+      <div class="incomeProfitPanel">
+        <div class="totalIncomePanel">
+          <span class="spanTotalIncome">Total Income: </span><br>
+          <span class="totalMoney"></span>
+        </div>
+        <div class="totalIncomeByDatePanel">
+
+          <div class="totalIncomeDaily">
+            <span class="targetTitle">Daily Targets: </span><br>
+            <div class="dailyIncome">
+              <label>
+                <span class="custom-checkboxDaily1"></span> Income: <span class="dailyIncomeSpan1"></span>
+              </label>
+            </div>
+            <div class="dailySells">
+              <label>
+                <span class="custom-checkboxDaily2"></span> Sells: <span class="dailyIncomeSpan2"></span>
+              </label>
+            </div>
+            <div class="dailyItems">
+              <label>
+                <span class="custom-checkboxDaily3"></span> Products: <span class="dailyIncomeSpan3"></span>
+              </label>
+            </div>
+            <div class="dailyPizza">
+              <label>
+                <span class="custom-checkboxDaily4"></span> Pizzas: <span class="dailyIncomeSpan4"></span>
+              </label>
+            </div>
+            <div class="dailyPork">
+              <label>
+                <span class="custom-checkboxDaily5"></span> Pork Products: <span class="dailyIncomeSpan5"></span>
+              </label>
+            </div>
+            <div class="dailyPasta">
+              <label>
+                <span class="custom-checkboxDaily6"></span> Pasta Products: <span class="dailyIncomeSpan6"></span>
+              </label>
+            </div>
+            <div class="dailyChicken">
+              <label>
+                <span class="custom-checkboxDaily7"></span> Chicken Products: <span class="dailyIncomeSpan7"></span>
+              </label>
+            </div>
+            <div class="dailyFish">
+              <label>
+                <span class="custom-checkboxDaily8"></span> Fish Products: <span class="dailyIncomeSpan8"></span>
+              </label>
+            </div>
+            <div class="dailyDrink">
+              <label>
+                <span class="custom-checkboxDaily9"></span> Drinks: <span class="dailyIncomeSpan9"></span>
+              </label>
+            </div>
+            <div class="dailySauce">
+              <label>
+                <span class="custom-checkboxDaily10"></span> Sauces: <span class="dailyIncomeSpan10"></span>
+              </label>
+            </div>
+            <div class="dailyHomePizza">
+              <label>
+                <span class="custom-checkboxDaily11"></span> Home Pizza: <span class="dailyIncomeSpan11"></span>
+              </label>
+            </div>
+            <div class="daily4StaggioniPizza">
+              <label>
+                <span class="custom-checkboxDaily12"></span> 4Staggioni Pizza: <span class="dailyIncomeSpan12"></span>
+              </label>
+            </div>
+            <div class="dailyDiavolaPizza">
+              <label>
+                <span class="custom-checkboxDaily13"></span> Diavola Pizza: <span class="dailyIncomeSpan13"></span>
+              </label>
+            </div>
+          </div>
+
+          <div class="totalIncomeWeekly hidden-container">
+            <span class="targetTitle">Weekly Targets: </span><br>
+            <div class="weeklyIncome">
+              <label>
+                <span class="custom-checkboxWeekly1"></span> Income: <span class="weeklyIncomeSpan1"></span>
+              </label>
+            </div>
+            <div class="weeklySells">
+              <label>
+                <span class="custom-checkboxWeekly2"></span> Sells: <span class="weeklyIncomeSpan2"></span>
+              </label>
+            </div>
+            <div class="weeklyItems">
+              <label>
+                <span class="custom-checkboxWeekly3"></span> Products: <span class="weeklyIncomeSpan3"></span>
+              </label>
+            </div>
+            <div class="weeklyPizza">
+              <label>
+                <span class="custom-checkboxWeekly4"></span> Pizzas: <span class="weeklyIncomeSpan4"></span>
+              </label>
+            </div>
+            <div class="weeklyPork">
+              <label>
+                <span class="custom-checkboxWeekly5"></span> Pork Products: <span class="weeklyIncomeSpan5"></span>
+              </label>
+            </div>
+            <div class="weeklyPasta">
+              <label>
+                <span class="custom-checkboxWeekly6"></span> Pasta Products: <span class="weeklyIncomeSpan6"></span>
+              </label>
+            </div>
+            <div class="weeklyChicken">
+              <label>
+                <span class="custom-checkboxWeekly7"></span> Chicken Products: <span class="weeklyIncomeSpan7"></span>
+              </label>
+            </div>
+            <div class="weeklyFish">
+              <label>
+                <span class="custom-checkboxWeekly8"></span> Fish Products: <span class="weeklyIncomeSpan8"></span>
+              </label>
+            </div>
+            <div class="weeklyDrink">
+              <label>
+                <span class="custom-checkboxWeekly9"></span> Drinks: <span class="weeklyIncomeSpan9"></span>
+              </label>
+            </div>
+            <div class="weeklySauce">
+              <label>
+                <span class="custom-checkboxWeekly10"></span> Sauces: <span class="weeklyIncomeSpan10"></span>
+              </label>
+            </div>
+            <div class="weeklyHomePizza">
+              <label>
+                <span class="custom-checkboxWeekly11"></span> Home Pizza: <span class="weeklyIncomeSpan11"></span>
+              </label>
+            </div>
+            <div class="weekly4StaggioniPizza">
+              <label>
+                <span class="custom-checkboxWeekly12"></span> 4Staggioni Pizza: <span class="weeklyIncomeSpan12"></span>
+              </label>
+            </div>
+            <div class="weeklyDiavolaPizza">
+              <label>
+                <span class="custom-checkboxWeekly13"></span> Diavola Pizza: <span class="weeklyIncomeSpan13"></span>
+              </label>
+            </div>
+          </div>
+
+          <div class="totalIncomeMonthly hidden-container">
+            <span class="targetTitle">Monthly Targets: </span><br>
+            <div class="monthlyIncome">
+              <label>
+                <span class="custom-checkboxMonthly1"></span> Income: <span class="monthlyIncomeSpan1"></span>
+              </label>
+            </div>
+            <div class="monthlySells">
+              <label>
+                <span class="custom-checkboxMonthly2"></span> Sells: <span class="monthlyIncomeSpan2"></span>
+              </label>
+            </div>
+            <div class="monthlyItems">
+              <label>
+                <span class="custom-checkboxMonthly3"></span> Products: <span class="monthlyIncomeSpan3"></span>
+              </label>
+            </div>
+            <div class="monthlyPizza">
+              <label>
+                <span class="custom-checkboxMonthly4"></span> Pizzas: <span class="monthlyIncomeSpan4"></span>
+              </label>
+            </div>
+            <div class="monthlyPork">
+              <label>
+                <span class="custom-checkboxMonthly5"></span> Pork Products: <span class="monthlyIncomeSpan5"></span>
+              </label>
+            </div>
+            <div class="monthlyPasta">
+              <label>
+                <span class="custom-checkboxMonthly6"></span> Pasta Products: <span class="monthlyIncomeSpan6"></span>
+              </label>
+            </div>
+            <div class="monthlyChicken">
+              <label>
+                <span class="custom-checkboxMonthly7"></span> Chicken Products: <span class="monthlyIncomeSpan7"></span>
+              </label>
+            </div>
+            <div class="monthlyFish">
+              <label>
+                <span class="custom-checkboxMonthly8"></span> Fish Products: <span class="monthlyIncomeSpan8"></span>
+              </label>
+            </div>
+            <div class="monthlyDrink">
+              <label>
+                <span class="custom-checkboxMonthly9"></span> Drinks: <span class="monthlyIncomeSpan9"></span>
+              </label>
+            </div>
+            <div class="monthlySauce">
+              <label>
+                <span class="custom-checkboxMonthly10"></span> Sauces: <span class="monthlyIncomeSpan10"></span>
+              </label>
+            </div>
+            <div class="monthlyHomePizza">
+              <label>
+                <span class="custom-checkboxMonthly11"></span> Home Pizza: <span class="monthlyIncomeSpan11"></span>
+              </label>
+            </div>
+            <div class="monthly4StaggioniPizza">
+              <label>
+                <span class="custom-checkboxMonthly12"></span> 4Staggioni Pizza: <span
+                  class="monthlyIncomeSpan12"></span>
+              </label>
+            </div>
+            <div class="monthlyDiavolaPizza">
+              <label>
+                <span class="custom-checkboxMonthly13"></span> Diavola Pizza: <span class="monthlyIncomeSpan13"></span>
+              </label>
+            </div>
+          </div>
+
+          <div class="totalIncomeYearly hidden-container">
+            <span class="targetTitle">Yearly Targets: </span><br>
+            <div class="yearlyIncome">
+              <label>
+                <span class="custom-checkboxYearly1"></span> Income: <span class="yearlyIncomeSpan1"></span>
+              </label>
+            </div>
+            <div class="yearlySells">
+              <label>
+                <span class="custom-checkboxYearly2"></span> Sells: <span class="yearlyIncomeSpan2"></span>
+              </label>
+            </div>
+            <div class="yearlyItems">
+              <label>
+                <span class="custom-checkboxYearly3"></span> Products: <span class="yearlyIncomeSpan3"></span>
+              </label>
+            </div>
+            <div class="yearlyPizza">
+              <label>
+                <span class="custom-checkboxYearly4"></span> Pizzas: <span class="yearlyIncomeSpan4"></span>
+              </label>
+            </div>
+            <div class="yearlyPork">
+              <label>
+                <span class="custom-checkboxYearly5"></span> Pork Products: <span class="yearlyIncomeSpan5"></span>
+              </label>
+            </div>
+            <div class="yearlyPasta">
+              <label>
+                <span class="custom-checkboxYearly6"></span> Pasta Products: <span class="yearlyIncomeSpan6"></span>
+              </label>
+            </div>
+            <div class="yearlyChicken">
+              <label>
+                <span class="custom-checkboxYearly7"></span> Chicken Products: <span class="yearlyIncomeSpan7"></span>
+              </label>
+            </div>
+            <div class="yearlyFish">
+              <label>
+                <span class="custom-checkboxYearly8"></span> Fish Products: <span class="yearlyIncomeSpan8"></span>
+              </label>
+            </div>
+            <div class="yearlyDrink">
+              <label>
+                <span class="custom-checkboxYearly9"></span> Drinks: <span class="yearlyIncomeSpan9"></span>
+              </label>
+            </div>
+            <div class="yearlySauce">
+              <label>
+                <span class="custom-checkboxYearly10"></span> Sauces: <span class="yearlyIncomeSpan10"></span>
+              </label>
+            </div>
+            <div class="yearlyHomePizza">
+              <label>
+                <span class="custom-checkboxYearly11"></span> Home Pizza: <span class="yearlyIncomeSpan11"></span>
+              </label>
+            </div>
+            <div class="yearly4StaggioniPizza">
+              <label>
+                <span class="custom-checkboxYearly12"></span> 4Staggioni Pizza: <span class="yearlyIncomeSpan12"></span>
+              </label>
+            </div>
+            <div class="yearlyDiavolaPizza">
+              <label>
+                <span class="custom-checkboxYearly13"></span> Diavola Pizza: <span class="yearlyIncomeSpan13"></span>
+              </label>
+            </div>
+          </div>
+
+          <button onclick="changeRaport()" class="changeDateType absolute-button">
+        </div>
+
+      </div>
+    </div>
+    <div class="consoleOverviewBackground">
+      <div class="consoleOverview">
+        <div class="status-container">
+          <div class="ovenStatus"><span></span> Empty ovens: <div class="dataConsoleBack1"><span
+                class="ovenStatusSpan"></span></div></span>
+            <div class="loaderContainer">
+              <div class="loaderOvens"></div>
+            </div>
+          </div>
+          <div class="delivererStatus"><span></span> Free deliverers: <div class="dataConsoleBack2"><span
+                class="delivererStatusSpan"></span></div></span>
+            <div class="loaderContainer">
+              <div class="loaderDeliverers"></div>
+            </div>
+          </div>
+          <div class="rawMaterialStatus"><span></span> Raw material status: <div class="dataConsoleBack3"><span
+                class="rawMaterialStatusSpan"></span></div></span>
+            <div class="loaderContainer">
+              <div class="loaderRawMaterials"></div>
+            </div></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="backgroundSelledItems">
+      <div class="foregroundSelledItems">
+        <div class="foregroundSelledItemsPizza">
+          <div class="pizza-title"> <span>Pizza</span>
+            <div class="lineItemsPizzas"></div>
+
+          </div>
+
+          <div class="itemsContainerDisplay">
+            <div id="pizza-list">
+            </div>
+          </div>
+        </div>
+        <div class="foregroundSelledItemsPork hidden-container">
+
+          <div class="pork-title"> <span>Pork</span>
+            <div class="lineItemsPork"></div>
+
+          </div>
+
+          <div class="itemsContainerDisplay">
+            <div id="pork-list">
+            </div>
+          </div>
+        </div>
+
+        <div class="foregroundSelledItemsPasta hidden-container">
+
+          <div class="pasta-title"> <span>Pasta</span>
+            <div class="lineItemsPasta"></div>
+
+          </div>
+
+          <div class="itemsContainerDisplay">
+            <div id="pasta-list">
+            </div>
+          </div>
+        </div>
+        <div class="foregroundSelledItemsChicken hidden-container">
+
+          <div class="chicken-title"> <span>Chicken</span>
+            <div class="lineItemsChicken"></div>
+
+          </div>
+
+          <div class="itemsContainerDisplay">
+            <div id="chicken-list">
+            </div>
+          </div>
+        </div>
+
+        <div class="foregroundSelledItemsFish hidden-container">
+
+          <div class="fish-title"> <span>Fish</span>
+            <div class="lineItemsFish"></div>
+
+          </div>
+
+          <div class="itemsContainerDisplay">
+            <div id="fish-list">
+            </div>
+          </div>
+        </div>
+
+        <div class="foregroundSelledItemsDrink hidden-container">
+
+          <div class="drink-title"> <span>Drink</span>
+            <div class="lineItemsDrink"></div>
+
+          </div>
+
+          <div class="itemsContainerDisplay">
+            <div id="drink-list">
+            </div>
+          </div>
+        </div>
+
+
+        <div class="foregroundSelledItemsSauce hidden-container">
+
+          <div class="sauce-title"> <span>Sauce</span>
+            <div class="lineItemsSauce"></div>
+
+          </div>
+
+          <div class="itemsContainerDisplay">
+            <div id="sauce-list">
+            </div>
+          </div>
+        </div>
+
+        <div class="foregroundSelledItemsAll hidden-container">
+
+          <div class="all-title"> <span>All</span>
+            <div class="lineItemsAll"></div>
+
+          </div>
+
+          <div class="itemsContainerDisplay">
+            <div id="all-list">
+            </div>
+          </div>
+        </div>
+      </div>
+      <button onclick="changeRaportItemsDisplay()" class="changeItemSection absolute-button">
+    </div>
+    <div class="socialNetworksBackground">
+      <div class="socialNetworks"></div>
+      <a href="https://www.facebook.com" class="socialButtonFacebook absolute-button" draggable="false">
+        <img src="./jpg/facebook.png" alt="ImageFacebook">
+        <span>Facebook</span>
+      </a>
+      <a href="https://www.instagram.com" class="socialButtonInstagram absolute-button" draggable="false">
+        <img src="./jpg/instagram.png" alt="ImageInstagram">
+        <span>Instagram</span>
+      </a>
+      <a href="https://www.twitter.com" class="socialButtonTwitter absolute-button" draggable="false">
+        <img src="./jpg/twitter.png" alt="ImageTwitter">
+        <span>Twitter</span>
+      </a>
+      <a href="https://www.youtube.com" class="socialButtonYoutube absolute-button" draggable="false">
+        <img src="./jpg/youtube.png" alt="ImageYoutube">
+        <span>YouTube</span>
+      </a>
+    </div>
+    <div class="statusCirclePercentagesBackground">
+      <div class="statusCirclePercentages">
+        <div class="progressCirclePercentages">
+<div class="progress-containerOverall">
+    <div class="progress-barOverall" id="progressBarOverall"></div>
+</div>
+        </div>
+        <div class="progressCircleLine">
+        </div>
+        <div class="percentagesContainer">
+          <div class="statusPending"><span>PENDING</span></div>
+          <div class="statusProcessing"><span>PROCESSING</span></div>
+          <div class="statusIn_Preparation"><span>IN PREPARATION</span></div>
+          <div class="statusDone"><span>DONE</span></div>
+          <div class="statusReady_For_Delivery"><span>READY FOR DELIVERY</span></div>
+          <div class="statusIn_Delivery"><span>IN DELIVERY</span></div>
+          <div class="statusDelivered"><span>DELIVERED</span></div>
+          <div class="statusCanceled"><span>CANCELED</span></div>
+          <div class="statusQuantity_In_Progress"><span>QUANTITY IN PROGRESS</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="graphicsBackground">
+      <div class="graphicsDisplay">
+        <div class="graphicsDisplayIn">
+        <canvas id="ordersChart"></canvas>
+        <canvas id="canceledOrdersChart"></canvas>
+        </div>
+      </div>
+      <div class="dashboardStats">
+        <div class="dashboardStatsDaily">
+          <div class="totalOrdersDDiv">
+            <span class="totalOrdersD"> Total Orders </span>
+            <div class="totalOrdersDCalculate"></div>
+            <div class="totalOrdersDPercentage"></div>
+          </div>
+
+          <div class="totalItemsDDiv">
+            <span class="totalItemsD"> Total Items </span>
+            <div class="totalItemsDCalculate"></div>
+            <div class="totalItemsDPercentage"></div>
+          </div>
+
+          <div class="totalIncomeDDiv">
+            <span class="totalIncomeD"> Total Income </span>
+            <div class="totalIncomeDCalculate"></div>
+            <div class="totalIncomeDPercentage"></div>
+          </div>
+
+          <div class="totalSpendDDiv">
+            <span class="totalSpendD"> Total Spend </span>
+            <div class="totalSpendDCalculate"></div>
+            <div class="totalSpendDPercentage"></div>
+          </div>
+
+          <div class="totalCustomersDDiv">
+            <span class="totalCustomersD"> Total Customers </span>
+            <div class="totalCustomersDCalculate"></div>
+            <div class="totalCustomersDPercentage"></div>
+          </div>
+
+          <div class="totalCanceledOrdersDDiv">
+            <span class="totalCanceledOrdersD"> Total Canceled Orders </span>
+            <div class="totalCanceledOrdersDCalculate"></div>
+            <div class="totalCanceledOrdersDPercentage"></div>
+          </div>
+
+
+        </div>
+        <div class="dashboardStatsMonthly hidden-container-dashboard">
+          <div class="totalOrdersMDiv">
+            <span class="totalOrdersM"> Total Orders </span>
+            <div class="totalOrdersMCalculate"></div>
+            <div class="totalOrdersMPercentage"></div>
+          </div>
+
+          <div class="totalItemsMDiv">
+            <span class="totalItemsM"> Total Items </span>
+            <div class="totalItemsMCalculate"></div>
+            <div class="totalItemsMPercentage"></div>
+          </div>
+
+          <div class="totalIncomeMDiv">
+            <span class="totalIncomeM"> Total Income </span>
+            <div class="totalIncomeMCalculate"></div>
+            <div class="totalIncomeMPercentage"></div>
+          </div>
+
+          <div class="totalSpendMDiv">
+            <span class="totalSpendM"> Total Spend </span>
+            <div class="totalSpendMCalculate"></div>
+            <div class="totalSpendMPercentage"></div>
+          </div>
+
+          <div class="totalCustomersMDiv">
+            <span class="totalCustomersM"> Total Customers </span>
+            <div class="totalCustomersMCalculate"></div>
+            <div class="totalCustomersMPercentage"></div>
+          </div>
+
+          <div class="totalCanceledOrdersMDiv">
+            <span class="totalCanceledOrdersM"> Total Canceled Orders </span>
+            <div class="totalCanceledOrdersMCalculate"></div>
+            <div class="totalCanceledOrdersMPercentage"></div>
+          </div>
+        </div>
+
+        <div class="dashboardStatsWeekly hidden-container-dashboard">
+          <div class="totalOrdersWDiv">
+            <span class="totalOrdersW"> Total Orders </span>
+            <div class="totalOrdersWCalculate"></div>
+            <div class="totalOrdersWPercentage"></div>
+          </div>
+
+          <div class="totalItemsWDiv">
+            <span class="totalItemsW"> Total Items </span>
+            <div class="totalItemsWCalculate"></div>
+            <div class="totalItemsWPercentage"></div>
+          </div>
+
+          <div class="totalIncomeWDiv">
+            <span class="totalIncomeW"> Total Income </span>
+            <div class="totalIncomeWCalculate"></div>
+            <div class="totalIncomeWPercentage"></div>
+          </div>
+
+          <div class="totalSpendWDiv">
+            <span class="totalSpendW"> Total Spend </span>
+            <div class="totalSpendWCalculate"></div>
+            <div class="totalSpendWPercentage"></div>
+          </div>
+
+          <div class="totalCustomersWDiv">
+            <span class="totalCustomersW"> Total Customers </span>
+            <div class="totalCustomersWCalculate"></div>
+            <div class="totalCustomersWPercentage"></div>
+          </div>
+
+          <div class="totalCanceledOrdersWDiv">
+            <span class="totalCanceledOrdersW"> Total Canceled Orders </span>
+            <div class="totalCanceledOrdersWCalculate"></div>
+            <div class="totalCanceledOrdersWPercentage"></div>
+          </div>
+        </div>
+
+        <div class="dashboardStatsYearly hidden-container-dashboard">
+          <div class="totalOrdersYDiv">
+            <span class="totalOrdersY"> Total Orders </span>
+            <div class="totalOrdersYCalculate"></div>
+            <div class="totalOrdersYPercentage"></div>
+          </div>
+
+          <div class="totalItemsYDiv">
+            <span class="totalItemsY"> Total Items </span>
+            <div class="totalItemsYCalculate"></div>
+            <div class="totalItemsYPercentage"></div>
+          </div>
+
+          <div class="totalIncomeYDiv">
+            <span class="totalIncomeY"> Total Income </span>
+            <div class="totalIncomeYCalculate"></div>
+            <div class="totalIncomeYPercentage"></div>
+          </div>
+
+          <div class="totalSpendYDiv">
+            <span class="totalSpendY"> Total Spend </span>
+            <div class="totalSpendYCalculate"></div>
+            <div class="totalSpendYPercentage"></div>
+          </div>
+
+          <div class="totalCustomersYDiv">
+            <span class="totalCustomersY"> Total Customers </span>
+            <div class="totalCustomersYCalculate"></div>
+            <div class="totalCustomersYPercentage"></div>
+          </div>
+
+          <div class="totalCanceledOrdersYDiv">
+            <span class="totalCanceledOrdersY"> Total Canceled Orders </span>
+            <div class="totalCanceledOrdersYCalculate"></div>
+            <div class="totalCanceledOrdersYPercentage"></div>
+          </div>
+        </div>
+
+
+        <button onclick="changeRaportDashboard()" class="changeDashboardRight absolute-button">
+          <button onclick="changeRaportDashboard()" class="changeDashboardLeft absolute-button">
+      </div>
+    </div>
+  </div>
+  <script src="./oViewAppliancesScript.js"></script>
+  <script src="./oViewSelectedAppliancesInfo.js"></script>
+  <script src="./oViewDisplayAppliancesData.js"></script>
+  <script src="./oViewScriptOrderStatus.js"></script>
+  <script src="./oViewScriptOrderItems.js"></script>
+  <script src="./oViewRawMaterialsTableScript.js"></script>
+  <script src="./oViewChangeTableButton.js"></script>
+  <script src="./oViewRaport.js"></script>
+  <script src="./oViewChangeRaport.js"></script>
+  <script src="./oViewMiniConsole.js"></script>
+  <script src="./oViewItemSectionDisplay.js"></script>
+  <script src="./oViewChangeItemSectionDisplay.js"></script>
+  <script src="./oViewPercentagesCircleScript.js"></script>
+  <script src="./oViewChartOrdersDisplay.js"></script>
+  <script src="./oViewDashboardScript.js"></script>
+  <script src="./oViewChangeDashboard.js"></script>
+</body>
+
+</html>

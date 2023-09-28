@@ -1,0 +1,13 @@
+<div class="wrapper">
+    <div class="block">
+        <form [formGroup]="login">
+            <h2 class="title">Login</h2>
+            <input type="text" placeholder="Username" class="input" formControlName="username" />
+            <input type="password" placeholder="Password" class="input" formControlName="pass" />
+            <div class="button">
+                <button (click)="loginSubmit()">Login</button>
+                <button (click)="goToSignup()">SignUp</button>
+            </div>
+        </form>
+    </div>
+</div>

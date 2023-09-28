@@ -1,0 +1,2 @@
+D:\Facultate\Siemens\InternshipSiemens\UI\UI\obj\Release\UI.esproj.SuggestedBindingRedirects.cache
+D:\Facultate\Siemens\InternshipSiemens\UI\UI\obj\Release\UI.esproj.CoreCompileInputs.cache

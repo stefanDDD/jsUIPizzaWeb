@@ -1,0 +1,48 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <link rel="stylesheet" href="stylesNavBar.css">
+    <link rel="stylesheet" href="stylesRawMaterials.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="./Overview.html" draggable="false">Overview</a>
+        <img src="./jpg/overview.png" alt="Icon Home" class="iconMenu1">
+        <a href="./Database.html" draggable="false">Database</a>
+        <img src="./jpg/database.png" alt="Icon Database" class="iconMenu2">
+        <a href="Appliances.html" draggable="false">Appliances</a>
+        <img src="./jpg/appliances.png" alt="Icon Appliances" class="iconMenu3">
+        <a href="./Map.html" draggable="false">Map</a>
+        <img src="./jpg/map.png" alt="Icon Map" class="iconMenu4">
+        <a href="./Dynamic.html" draggable="false">Dynamic</a>
+        <img src="./jpg/dynamic.png" alt="Icon Dynamic" class="iconMenu5">
+        <a class="active" href="./RawMaterials.html" draggable="false">Stock</a>
+        <img src="./jpg/rawMaterials.png" alt="Icon RawMaterials" class="iconMenu6">
+    </div>
+    <div class="databaseRawMaterials">
+
+        <div class="search-container-RawMaterials">
+            <input type="text" id="search-input-RawMaterials" placeholder="Search...">
+            <button id="search-button-RawMaterials">Search</button>
+        </div>
+        <div class="lineRawMaterialsPage"></div>
+        <div class="rawMaterialsSingleBackground">
+            <div class="rawMaterials">
+
+                <div class="rawMaterialsContainer">
+                    <table id="rawMaterialsTable">
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="databaseRawMaterialsBottom">
+            <button class="confirm-transaction-RawMaterials">Confirm Transaction</button>
+            <input type="text" id="transactionPrice" placeholder="Price: " disabled>
+            <input type="text" id="transactionPricePay" onmousedown="return false;" onselectstart="return false;" readonly>
+        </div>
+    </div>
+    <script src="./rawMaterialstableScript.js"></script>
+</body>
+
+</html>

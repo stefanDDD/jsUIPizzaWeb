@@ -1,0 +1,45 @@
+<div class="wrapper">
+    <div class="top-bar">
+        <div class="left">
+            <div class="homeIcon" (click)="profile()">
+            </div>
+            <span class="welcome">Welcome {{username}}!</span>
+        </div>
+        <div class="center" (click)="home()">
+            <div class="logo-container">
+            </div>
+        </div>
+        <div class="right" (click)="cart()">
+            <div class="checkoutIcon">
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="card-container">
+            <div class="row" *ngFor="let row of cardRows">
+                <div class="col" *ngFor="let card of row; let i = index">
+                    <div class="card">
+                        <h3 class="card-title">{{ card.title }}</h3>
+                        <img [src]="card.image" alt="Card Image" class="card-image">
+                        <div class="card-content">
+                            <p class="card-description">{{ card.description }}</p>
+                            <div class="card-buttons">
+                                <button (click)="decreaseQuantity(card)">-</button>
+                                <span>{{ card.quantity }}</span>
+                                <button (click)="increaseQuantity(card)">+</button>
+                                <button class="addInCartBtn"
+                                    (click)="addItemToCart(card.title, card.id, card.quantity, card.price ,card)">Add
+                                    to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-bar">
+        <span class="phoneNumber">0721 079 883 | L-V 11:30 - 23:00</span>
+    </div>
+</div>

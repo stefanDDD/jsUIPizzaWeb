@@ -1,0 +1,72 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+}
+
+.wrapper::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('jpg/pizzaBackground.jpg');
+    background-size: cover;
+    filter: blur(7px);
+    z-index: -1;
+}
+
+.block {
+    padding: 20px;
+    background-color: rgba(255, 239, 239, 0.8);
+    border-radius: 40px;
+    position: fixed;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input {
+    margin-bottom: 50px;
+    padding: 5px;
+    width: 200px;
+    border-radius: 40px;
+}
+
+button {
+    padding: 15px 30px;
+    background: linear-gradient(270deg, blue, red);
+    margin-right: 5px;
+    color: white;
+    font-weight: 600;
+    border: normal;
+    margin-top: 20px;
+    border-radius: 40px;
+}
+
+button:hover {
+    background: linear-gradient(90deg, blue, red);
+    color: rgba(2, 1, 1);
+    border: outset;
+}
+
+.title {
+
+
+    font-weight: bold;
+    font-size: 30px;
+
+}

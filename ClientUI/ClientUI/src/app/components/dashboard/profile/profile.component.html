@@ -1,0 +1,31 @@
+<div class="wrapper">
+    <div class="top-bar">
+        <div class="left">
+            <div class="homeIcon" (click)="profile()">
+            </div>
+            <span class="welcome">Welcome {{username}}!</span>
+        </div>
+        <div class="center" (click)="home()">
+            <div class="logo-container">
+            </div>
+        </div>
+        <div class="right" (click)="cart()">
+            <div class="checkoutIcon">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="content">
+
+        <div class="container">
+            <div class="rectangle" [innerHTML]="text"></div>
+
+            <button class="logoutbtn" (click)="logout()">Logout</button>
+
+        </div>
+        <button class="modifybtn" (click)="modify()">Modify</button>
+        <div class="bottom-bar">
+            <span class="phoneNumber">0721 079 883 | L-V 11:30 - 23:00</span>
+        </div>
+    </div>

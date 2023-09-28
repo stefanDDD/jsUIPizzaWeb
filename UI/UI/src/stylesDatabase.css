@@ -1,0 +1,182 @@
+.database {
+    width: 98%;
+    background-color: white;
+    color: black;
+    top: 10%;
+    left: 55%;
+    transform: translate(1%, 0%);
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.databaseSingleBackground {
+    background-color: whitesmoke;
+    width: 1100px;
+    height: 750px;
+    left: 10%;
+    top: 10%;
+    max-height: 100%;
+    overflow-y: hidden;
+    transform: translate(0%, -8%);
+}
+
+.databaseBackground {
+    width: 1100px;
+    height: 900px;
+    background-color: whitesmoke;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 6px solid #999;
+    border-radius: 15px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.lineDatabasePage {
+    width: 1075px;
+    height: 5px;
+    background-color: #999;
+    position: absolute;
+    top: 7%;
+    left: 1%;
+
+}
+
+.databaseButtons {
+    background-color: white;
+    width: 1100px;
+    height: 80px;
+    left: 10%;
+    top: 10%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 10px;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+th {
+    background-color: whitesmoke;
+    color: black;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+tr:nth-child(even) {
+    background-color: whitesmoke;
+    color: black;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.changeTableDatabasePage {
+    width: 1050px;
+    height: 38px;
+    background-color: white;
+    transform: translate(2.5%, 2080%);
+    border: none;
+    transition: box-shadow 0.3s ease;
+    border-radius: 35px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.changeTableDatabasePage::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 8px solid #999;
+}
+
+.changeTableDatabasePage:hover {
+    box-shadow: 0 15px 20px rgba(15, 14, 14, 0.2);
+    transform: translate(25px, 775px);
+}
+
+.changeTableDatabasePage:hover::before {
+    box-shadow: 0 15px 20px rgba(15, 14, 14, 0.2);
+}
+
+.search-container-dbPage {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin: 20px;
+    margin-top: 0px;
+    transform: translate(-1%, 25%);
+    user-select: none;
+}
+
+#search-input-dbPage {
+    padding: 8px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 10px 0 0 10px;
+    width: 50%;
+    user-select: none;
+}
+
+#search-button-dbPage {
+    padding: 8px 12px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', sans-serif;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    user-select: none;
+}
+
+#search-button-dbPage:hover {
+    background-color: #0056b3;
+    user-select: none;
+}
+
+.hidden-container {
+    display: none;
+}
+.usersContainer,
+.orderItemsContainer,
+.orderStatusContainer,
+.menuItemsContainer {
+    max-height: 750px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.usersContainer::-webkit-scrollbar,
+.orderItemsContainer::-webkit-scrollbar,
+.orderStatusContainer::-webkit-scrollbar,
+.menuItemsContainer::-webkit-scrollbar {
+    width: 0;
+}
+
+#usersTable,
+#orderItemsTable,
+#orderStatusTable,
+#menuItemsTable {
+    width: 100%;
+}

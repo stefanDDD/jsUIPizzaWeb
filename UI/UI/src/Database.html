@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="stylesDatabase.css">
+    <link rel="stylesheet" href="stylesNavBar.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="./Overview.html" draggable="false">Overview</a>
+        <img src="./jpg/overview.png" alt="Icon Home" class="iconMenu1">
+        <a class="active" href="./Database.html" draggable="false">Database</a>
+        <img src="./jpg/database.png" alt="Icon Database" class="iconMenu2">
+        <a href="Appliances.html" draggable="false">Appliances</a>
+        <img src="./jpg/appliances.png" alt="Icon Appliances" class="iconMenu3">
+        <a href="./Map.html" draggable="false">Map</a>
+        <img src="./jpg/map.png" alt="Icon Map" class="iconMenu4">
+        <a href="./Dynamic.html" draggable="false">Dynamic</a>
+        <img src="./jpg/dynamic.png" alt="Icon Dynamic" class="iconMenu5">
+        <a href="./RawMaterials.html" draggable="false">Stock</a>
+        <img src="./jpg/rawMaterials.png" alt="Icon RawMaterials" class="iconMenu6">
+    </div>
+
+    <div class="databaseBackground">
+
+        <div class="search-container-dbPage">
+            <input type="text" id="search-input-dbPage" placeholder="Search...">
+            <button id="search-button-dbPage">Search</button>
+        </div>
+
+        <div class="lineDatabasePage"></div>
+        <div class="databaseButtons">
+        <button onclick="showTable()" class="changeTableDatabasePage">
+        </button>
+
+        </div>
+
+        <div class="databaseSingleBackground">
+            <div class="database">
+
+                <div class="usersContainer">
+                    <table id="usersTable">
+                    </table>
+                </div>
+
+                <div class="orderStatusContainer hidden-container">
+                    <table id="orderStatusTable">
+                    </table>
+                </div>
+
+                <div class="orderItemsContainer hidden-container">
+                    <table id="orderItemsTable">
+                    </table>
+                </div>
+
+                <div class="menuItemsContainer hidden-container">
+                    <table id="menuItemsTable">
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="databaseScriptUsers.js"></script>
+    <script src="databaseScriptOrderStatus.js"></script>
+    <script src="databaseScriptOrderItems.js"></script>
+    <script src="databaseScriptMenuItems.js"></script>
+    <script src="databaseScriptLoadTableDatabase.js"></script>
+
+</body>
+
+</html>

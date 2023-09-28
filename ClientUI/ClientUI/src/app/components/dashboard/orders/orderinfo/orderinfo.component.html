@@ -1,0 +1,14 @@
+<div *ngIf="isVisible" class="errorDiv">
+    <span class="closebtn" (click)="closeError()">x</span>
+    <h1 class="errortitle">Order ID {{orderId}}</h1>
+    <p class="errortitle">Order status: {{orderInfo}}</p>
+    <p class="errormsg">Username: {{orderUsername}}</p>
+    <p class="errormsg">Fullname: {{orderFullname}}</p>
+    <p class="errormsg">Address {{orderAddress}}</p>
+    <p class="errormsg">Phone number: {{orderPhoneNumber}}</p>
+    <p class="errormsg">Order sent: {{orderSent}}</p>
+    <p class="errormsg">Order arrival: {{orderArrival}}</p>
+    <p class="errormsg">Ordered Items:</p>
+    <pre class="errormsg">{{orderItems}}</pre>
+    <p class="errortitle">Order total: {{orderTotal}} Ron</p>
+</div>

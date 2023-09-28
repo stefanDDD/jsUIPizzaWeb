@@ -1,0 +1,41 @@
+<div class="wrapper">
+    <div class="top-bar">
+        <div class="left">
+            <div class="homeIcon" (click)="profile()">
+            </div>
+            <span class="welcome">Welcome {{username}}!</span>
+        </div>
+        <div class="center" (click)="home()">
+            <div class="logo-container">
+            </div>
+        </div>
+        <div class="right" (click)="cart()">
+            <div class="checkoutIcon">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="content">
+        <div class="container">
+            <div class="rectangle">
+                <h2 class="Shopping Cart">Shopping Cart</h2>
+                <div *ngIf="shoppingCart.length > 0">
+                    <p *ngFor="let item of shoppingCart">
+                        <strong>{{ item.quantity }} x {{ item.itemName }} - {{item.price*item.quantity }} RON</strong>
+                    </p>
+
+                    <p><strong>Total: {{ getTotal() }} Ron</strong></p>
+                </div>
+            </div>
+            <div class="cartBtns">
+                <button class="deleteCart" (click)="deleteCart()">Delete cart</button>
+                <button class="sendCart" (click)="sendCart()">Send Order</button>
+            </div>
+
+        </div>
+
+        <div class="bottom-bar">
+            <span class="phoneNumber">0721 079 883 | L-V 11:30 - 23:00</span>
+        </div>
+    </div>

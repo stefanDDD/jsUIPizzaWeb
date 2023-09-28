@@ -1,0 +1,17 @@
+<div class="wrapper">
+    <div class="block">
+        <form [formGroup]="register" (ngSubmit)="registerSubmit()">
+            <h2 class="title">Register</h2>
+            <input type="text" placeholder="Username" class="input" formControlName="username" />
+            <input type="text" placeholder="Full Name" class="input" formControlName="fullname" />
+            <input type="text" placeholder="Email" class="input" formControlName="email" />
+            <input type="text" placeholder="Phone" class="input" formControlName="phone" />
+            <input type="text" placeholder="Address" class="input" formControlName="address" />
+            <input type="password" placeholder="Password" class="input" formControlName="pass" />
+            <div class="button">
+                <button (click)="goToLogin()">Back to Login</button>
+                <button type="submit" [disabled]="register.invalid">Create Account</button>
+            </div>
+        </form>
+    </div>
+</div>
